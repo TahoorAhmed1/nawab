@@ -122,10 +122,10 @@ input:focus{
 }
 
 select:hover {
-    border-bottom: 2px solid #F40000;
+    /* border-bottom: 2px solid #F40000; */
 }
 select {
-    border-bottom: 2px solid #fff;
+    /* border-bottom: 2px solid #fff; */
 }
 
 
