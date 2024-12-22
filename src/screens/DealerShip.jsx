@@ -1,4 +1,4 @@
-import './DealerShip.css';
+// import './DealerShip.css';
 import Footer from '../components/Footer';
 
 const DealerShip = () => {
