@@ -19,14 +19,14 @@
 
 @media (min-width: 1070px) {
  .main-logo-img{
-  width: 200px;
+  width: 170px;
   padding-bottom: 10px;
  }
 }
 
 @media (min-width: 1050px) {
   .main-logo-img{
-   width: 200px;
+   width: 170px;
    padding-bottom: 10px;
   }
  }
@@ -36,7 +36,7 @@
     }
     
     .main-logo-img{
-      width: 200px;
+      width: 170px;
       padding-bottom: 10px;
      }
   }

@@ -389,7 +389,7 @@ const Home = () => {
                   {/* Make Dropdown */}
                   <div className="relative w-[100%] mt-6">
                     <select
-                      className="w-full py-1 px-2 border appearance-none pr-8 text-black modelsBrands"
+                      className="w-full py-1 px-2  pr-8 text-black modelsBrands"
                       onChange={(e) => setMake(e.target.value)}
                     >
                       <option value="">Make</option>
@@ -425,7 +425,7 @@ const Home = () => {
                   {/* Model Dropdown */}
                   <div className="relative w-[100%] mt-6">
                     <select
-                      className="w-full py-1 px-2 border appearance-none pr-8 text-black modelsBrands"
+                      className="w-full py-1 px-2  pr-8 text-black modelsBrands"
                       onChange={(e) => setModel(e.target.value)}
                     >
                       <option value="">Model</option>
@@ -461,7 +461,7 @@ const Home = () => {
                   {/* Min Year Dropdown */}
                   <div className="relative w-[100%] mt-6">
                     <select
-                      className="w-full py-1 px-2 border appearance-none pr-8 text-black"
+                      className="w-full py-1 px-2  pr-8 text-black"
                       onChange={(e) => setMinYear(e.target.value)}
                     >
                       <option value="">Min Year</option>
@@ -497,7 +497,7 @@ const Home = () => {
                   {/* Max Year Dropdown */}
                   <div className="relative w-[100%] mt-6">
                     <select
-                      className="w-full py-1 px-2 border appearance-none pr-8 text-black"
+                      className="w-full py-1 px-2  pr-8 text-black"
                       onChange={(e) => setMaxYear(e.target.value)}
                     >
                       <option value="">Max Year</option>
