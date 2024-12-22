@@ -3,7 +3,20 @@ import "../components/LastImg.css"
 const LastImg = () => {
   return (
     <>
-<div className="last-img bg-cover bg-center h-auto  text-white  lg:py-28">
+ 
+<div  
+     style={{
+        backgroundImage: "url(../assets/homeServices.png)", // Fallback background for unsupported media types
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "-webkit-fill-available",
+        width: "100%",
+        position: "absolute",
+        top: 0,
+        left: 0,
+        zIndex: -1,
+      }}
+       className=" bg-cover bg-center h-auto  text-white  lg:py-28">
     <div className="container-web   flex flex-col lg:flex-row justify-between items-center gap-20 ">
         
         
