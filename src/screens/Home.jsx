@@ -323,7 +323,7 @@ const Home = () => {
               style={{ width: "100%", marginTop: "130px" }}
               className="bg-black bg-opacity-50 text-white text-center py-8 px-16 w-full rounded-lg"
             >
-              <h1 className="text-2xl  font-sans text-center md:text-5xl font-semibold mb-6">
+              <h1 className="text-2xl  font-sans text-center md:text-[2.2rem] font-semibold mb-6">
                 WELCOME TO{" "}
                 <span style={{ color: "#F40000" }}>SONI AUTO MARKET</span>
               </h1>
@@ -389,7 +389,7 @@ const Home = () => {
                   {/* Make Dropdown */}
                   <div className="relative w-[100%] mt-6">
                     <select
-                      className="w-full p-2 border appearance-none pr-8 text-black modelsBrands"
+                      className="w-full py-1 px-2 border appearance-none pr-8 text-black modelsBrands"
                       onChange={(e) => setMake(e.target.value)}
                     >
                       <option value="">Make</option>
@@ -400,14 +400,14 @@ const Home = () => {
                       ))}
                     </select>
                     <span
-                      className=" text-[#CCCCCC] mx-2 absolute top-0.5 right-8 z-50 "
+                      className=" text-[#CCCCCC] mx-2 absolute top-0 right-8 z-50 "
                       style={{ fontSize: "20px" }}
                     >
                       |
                     </span>
                     <span className="text-black">
                       <svg
-                        className=" absolute right-2 top-2 z-50 w-8 h-6"
+                        className=" absolute right-2 top-1.5 z-50 w-8 h-6"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
@@ -425,7 +425,7 @@ const Home = () => {
                   {/* Model Dropdown */}
                   <div className="relative w-[100%] mt-6">
                     <select
-                      className="w-full p-2 border appearance-none pr-8 text-black modelsBrands"
+                      className="w-full py-1 px-2 border appearance-none pr-8 text-black modelsBrands"
                       onChange={(e) => setModel(e.target.value)}
                     >
                       <option value="">Model</option>
@@ -436,14 +436,14 @@ const Home = () => {
                       ))}
                     </select>
                     <span
-                      className=" text-[#CCCCCC] mx-2 absolute top-0.5 right-8 z-50 "
+                      className=" text-[#CCCCCC] mx-2 absolute top-0 right-8 z-50 "
                       style={{ fontSize: "20px" }}
                     >
                       |
                     </span>
                     <span className="text-black">
                       <svg
-                        className=" absolute right-2 top-2 z-50 w-8 h-6"
+                        className=" absolute right-2 top-1.5 z-50 w-8 h-6"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
@@ -461,7 +461,7 @@ const Home = () => {
                   {/* Min Year Dropdown */}
                   <div className="relative w-[100%] mt-6">
                     <select
-                      className="w-full p-2 border appearance-none pr-8 text-black"
+                      className="w-full py-1 px-2 border appearance-none pr-8 text-black"
                       onChange={(e) => setMinYear(e.target.value)}
                     >
                       <option value="">Min Year</option>
@@ -472,14 +472,14 @@ const Home = () => {
                       ))}
                     </select>
                     <span
-                      className=" text-[#CCCCCC] mx-2 absolute top-0.5 right-8 z-50 "
+                      className=" text-[#CCCCCC] mx-2 absolute top-0 right-8 z-50 "
                       style={{ fontSize: "20px" }}
                     >
                       |
                     </span>
                     <span className="text-black">
                       <svg
-                        className=" absolute right-2 top-2 z-50 w-8 h-6"
+                        className=" absolute right-2 top-1.5 z-50 w-8 h-6"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
@@ -497,7 +497,7 @@ const Home = () => {
                   {/* Max Year Dropdown */}
                   <div className="relative w-[100%] mt-6">
                     <select
-                      className="w-full p-2 border appearance-none pr-8 text-black"
+                      className="w-full py-1 px-2 border appearance-none pr-8 text-black"
                       onChange={(e) => setMaxYear(e.target.value)}
                     >
                       <option value="">Max Year</option>
@@ -508,14 +508,14 @@ const Home = () => {
                       ))}
                     </select>
                     <span
-                      className=" text-[#CCCCCC] mx-2 absolute top-0.5 right-8 z-50 "
+                      className=" text-[#CCCCCC] mx-2 absolute top-0 right-8 z-50 "
                       style={{ fontSize: "20px" }}
                     >
                       |
                     </span>
                     <span className="text-black">
                       <svg
-                        className=" absolute right-2 top-2 z-50 w-8 h-6"
+                        className=" absolute right-2 top-1.5 z-50 w-8 h-6"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
@@ -532,8 +532,8 @@ const Home = () => {
 
                   {/* Search Button */}
                   <button
-                    style={{ padding: "10px 30px" }}
-                    className="text-white rounded w-full search-wala-button hover-btn-sary bg-[#F40000] border-0 font-medium"
+                    style={{ padding: "6px 15px" }}
+                    className="text-white rounded w-full search-wala-button hover-btn-sary bg-[#F40000] border-0 font-medium hover:border-black"
                     onClick={handleSearch}
                   >
                     Search
@@ -544,9 +544,9 @@ const Home = () => {
               <div className="mt-6 text-center ">
                 <Link
                   href="/car-details-search/brand=&min_price=&max_price=10000&min_year=&max_year=&color=&engine=&fuel_type=&body_style=1&model="
-                  className="inline-block px-10 font-medium  text-center mr-12 py-2.5 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
+                  className="inline-block px-10 font-medium  text-center mr-12 py-2.5 bg-[#F40000] text-white rounded hover:bg-red-600 transition-colors"
                 >
-                  <p>Cars above $10000</p>
+                  <p>Cars above then $10000</p>
                 </Link>
               </div>
             </div>
@@ -556,7 +556,7 @@ const Home = () => {
 
       <section className="quickSearchByMake py-20 mt-8">
         <div className="text-center mb-[55px]">
-          <h1 className="text-3xl md:text-5xl font-semibold font-sans">
+          <h1 className="text-3xl md:text-[2.2rem] font-semibold font-sans">
             QUICK SEARCH BY<span className="text-[#F40000]"> MAKE</span>
           </h1>
         </div>
@@ -579,15 +579,15 @@ const Home = () => {
                 className="brand-swiper"
               >
                 {brandsView.map((item, index) => (
-                  <SwiperSlide key={index} className="swipeMakeQuick">x
+                  <SwiperSlide key={index} className="swipeMakeQuick">
                     <Link
                       // href={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=&model=${index}`}
-                      her
+                      href=""
                       className="block px-2"
                     >
                       <div className="relative h-[110px] flex items-center justify-center transition-transform duration-300 hover:scale-105">
                         <img
-                          className={`h-auto max-h-[110px] w-auto max-w-[150px] object-contain ${
+                          className={`h-auto max-h-[110px] w-full max-w-[150px] object-contain ${
                             item.img ? "" : "defaultimg"
                           }`}
                           src={item.img}
@@ -619,7 +619,7 @@ const Home = () => {
         }}
       >
           <div className="text-center">
-            <h1 className="text-2xl text-center md:text-5xl font-sans font-semibold mb-16">
+            <h1 className="text-2xl text-center md:text-[2.2rem] font-sans font-semibold mb-16">
               QUICK SEARCH BY <span className="text-red-500">BODY TYPE</span>
             </h1>
           </div>
@@ -677,7 +677,7 @@ const Home = () => {
 
       <section className=" py-20  bg-[#EFF3FA] ">
         <div className="container-web">
-          <h2 className="text-5xl uppercase font-semibold font-sans text-center mb-[75px]">
+          <h2 className="text-[2.2rem] uppercase font-semibold font-sans text-center mb-[75px]">
             Recent Happy customers &{" "}
             <span className="text-red-500"> Featured Vehicles</span>
           </h2>

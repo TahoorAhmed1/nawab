@@ -167,6 +167,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    object-position: center;
       }
       .quickSearchByMake a.swipeMakeQuick {
     height: 200px;
