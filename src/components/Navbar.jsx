@@ -69,8 +69,8 @@ const Navbar = () => {
             {" "}
             <img
               className="main-logo-img"
-              width={180}
-              height={95}
+              width={207}
+              height={98}
               src="../assets/soni_auto_1 1.png"
               alt="Logo"
             />

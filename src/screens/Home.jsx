@@ -333,7 +333,7 @@ const Home = () => {
               <input
                 type="text"
                 placeholder="Find Your Car (Year Make Model)"
-                className="w-full p-2 bg-transparent rounded border border-gray-300 text-white placeholder-white"
+              className="w-full py-2 px-6 bg-transparent rounded-lg border border-[#FFFFFF]  text-[#FFFFFF] placeholder:text-[#FFFFFF]"
                 value={searchKey}
                 onChange={handleSearchInput}
               />
