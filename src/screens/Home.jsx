@@ -544,7 +544,7 @@ const Home = () => {
               <div className="mt-6 text-center ">
                 <Link
                   href="/car-details-search/brand=&min_price=&max_price=10000&min_year=&max_year=&color=&engine=&fuel_type=&body_style=1&model="
-                  className="inline-block px-10 font-medium  text-center mr-12 py-2.5 bg-[#F40000] text-white rounded hover:bg-red-600 transition-colors"
+                  className="inline-block px-10 font-medium  text-center mr-8 py-2.5 bg-[#F40000] text-white rounded hover:bg-red-600 transition-colors"
                 >
                   <p>Cars above then $10000</p>
                 </Link>
