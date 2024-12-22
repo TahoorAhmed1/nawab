@@ -77,7 +77,8 @@
 
   
   .navbar-background-img.fixed-navbar {
-    background: linear-gradient(180deg,#262626 35%,rgba(59,59,59,.8239670868) 66%,rgba(33,33,33,.3645833333) 88%,transparent);
+    background:linear-gradient(180deg, #262626 0%, #262626 51%, rgba(38, 38, 38, 0.8) 70.5%, rgba(38, 38, 38, 0.468571) 80%, rgba(38, 38, 38, 0) 100%);
+
     position: absolute;
     width: 100%;
     z-index: 999;

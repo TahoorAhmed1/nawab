@@ -63,7 +63,7 @@ const Navbar = () => {
           location.pathname === "/" ? "fixed-navbar" : ""
         }`}
       >
-        <div className=" flex justify-between py-3 container-web">
+        <div className=" flex justify-between py-2 container-web">
         <div>
           <Link to="/">
             {" "}
@@ -80,18 +80,19 @@ const Navbar = () => {
         {/* Desktop View */}
         {!isMobile && (
           <div >
-            <div className="p-1 flex justify-end items-center gap-5">
+            <div className="p-1 flex justify-end items-center gap-5 pr-[10px]">
               {/* Search Input with Icons */}
               <div className="relative flex items-center  text-black rounded-[3px]">
-                <span className="absolute left-2 top-1">
+                <span className="absolute left-2 top-0.5">
                   <img src={pin}  className="w-[16px]"/> 
                 </span>
 
                 <select
-                  className="w-full p-0.5 border rounded-sm appearance-none pl-8  text-black placeholder:text-black  "
+                  className="w-full text-[14px] p-0.5 border rounded-sm appearance-none pl-8  text-black placeholder:text-black  "
                   value={selectedLocation}
                   onChange={(e) => setSelectedLocation(e.target.value)}
                 >
+                  <option value="" >Select store location</option>
                   <option value="Toronto, Ontario" clas>Toronto, Ontario</option>
                   <option value="East moosejaw Saskatchewan">
                     East moosejaw Saskatchewan
@@ -104,8 +105,8 @@ const Navbar = () => {
 
 
 
-              <div className="flex items-center gap-3">
-                <span className=" text-white" style={{fontSize:'30px'}}>|</span>
+              <div className="flex items-center gap-[10px]">
+                <span className=" text-white" style={{fontSize:'20px'}}>|</span>
                 <img
                   style={{ cursor: "pointer" }}
                   width={25}
@@ -115,9 +116,9 @@ const Navbar = () => {
                 />
                 <span
                   style={{ cursor: "pointer", backgroundColor: "transparent" }}
-                  className="  text-sm  navbar-wala-bg"
+                  className="  text-sm  navbar-wala-bg underline"
                 >
-                  (123) 456-7890
+                  +1639-525-1669
                 </span>
                 <img
                   style={{ cursor: "pointer" }}
@@ -139,7 +140,7 @@ const Navbar = () => {
               {/* Left Section for Home */}
               <div className="flex-shrink-0 text-center mr-8">
                 <Link
-                  className=" font-normal font-sans  text-[16px] hoverr  navbar-wala-bg home-pr-color"
+                  className=" font-normal font-sans  text-[14px] hoverr  navbar-wala-bg home-pr-color"
                   to="/"
                 >
                   HOME
@@ -184,14 +185,7 @@ const Navbar = () => {
                   onToggle={() => handleDropdownToggle(5)}
                 />
               </div>
-              <div className="flex-shrink-0 text-center mr-8">
-                <Link
-                  className=" font-normal font-sans text-[16px] hoverr  navbar-wala-bg home-pr-color"
-                  to="/"
-                >
-                  TEXT NOW
-                </Link>
-              </div>
+           
             </div>
           </div>
         )}
@@ -265,7 +259,7 @@ const Navbar = () => {
               </div>
 
               {/* Center Phone Number and Icons */}
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-[10px] mb-4">
                 <span className="text-lg navbar-wala-bg">|</span>
                 <img width={20} src="../assets/SVG.png" alt="Main Icon" />
                 <span className="phone-nav font-semibold  text-lg  navbar-wala-bg">
