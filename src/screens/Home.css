@@ -1,0 +1,208 @@
+.home-background-imgs{
+    padding: 60px 20px;
+    
+}
+
+
+
+    .hover-btn-sary{
+    background-color: #F40000;
+    transition: .4s ease-in-out;
+   }
+
+
+    
+
+
+.hover-btn-sary:hover{
+    background-color:  black;
+    transition: .4s ease-in-out;
+    color:  white;
+    }
+
+
+    .drop-down-menu{
+       display: flex;
+       width: 85%;
+       gap: 20px;
+       align-items: center;
+       /* flex-wrap: wrap; */
+       justify-content: center;
+    }
+
+.search-wala-button {
+    text-align: center;
+    margin-top: 26px;
+}
+
+.quick-imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick-imgs img{
+    width: 210px;
+    margin: 0px -15px;
+}
+
+    @media screen and (max-width:1250px) {
+        .quick-imgs img{
+            width: 180px;
+            margin: 0px -10px;
+        }
+
+
+    }
+    @media screen and (max-width:1150px) {
+        .search-wala-button {
+            width: 60%;
+        }
+    }
+
+    @media screen and (max-width:930px) {
+        .flex.flex-wrap.justify-center.gap-4.mt-6 {
+            flex-direction: column !important;
+        }
+        .search-wala-button ,.drop-home-wala select{
+            width: 75%;
+        }
+    }
+    
+
+    @media screen and (max-width:1000px) {
+        
+    .drop-down-menu{
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .quick-imgs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    }
+
+
+
+    @media screen and (max-width:940px) {
+        
+        .drop-down-menu{
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+         }
+
+
+         .drop-down-menu select{
+            width: 100%;
+         }
+
+
+        }
+
+
+    @media screen and (max-width:715px) {
+        .drop-down-menu{
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+
+         .search-wala-button ,.drop-home-wala select{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:655px) {
+        .search-wala-button ,.drop-home-wala select{
+            width: 100%;
+        }
+        .home-k-btn{
+            width: 100%;
+            padding:10px ;
+            text-align: center;
+        }
+    }
+    
+    @media screen and (max-width:450px) {
+        .quick-imgs img{
+            width: 160px;
+        }
+
+    }
+    .slider-container {
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+      }
+      
+      .quickSearchByMake{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+      }
+      .quickSearchByMake a.swipeMakeQuick {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quickSearchByMake a.swipeMakeQuick img {
+    width: 50%;
+}
+.quickSearchByMake span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: black;
+}
+.quickSearchByMake .swiper-button-next::after {
+   color: #ffffff;
+    font-size: 22px;
+    font-weight: 800;
+}
+.quickSearchByMake .swiper-button-prev::after {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 800;
+}
+.quickSearchByMake .swiper-button-prev {
+    padding: 10px;
+    background: #f40000;
+    height: 50px;
+    width: 50px;
+}
+.quickSearchByMake .swiper-button-next {
+    padding: 10px;
+    background: #f40000;
+    height: 50px;
+    width: 50px;
+}
+.quickSearchByMake .swiper-button-next.swiper-button-disabled {
+    pointer-events: all;
+}
+.quickSearchByMake .swiper-button-prev.swiper-button-disabled {
+    pointer-events: all;
+}
+.quickSearchByMake a.swipeMakeQuick img.defaultimg {
+    width: 20%;
+}
+
+
+.slick-slider {
+    display: flex; /* Ensure flex layout */
+    gap: 16px; /* Adjust gap size here */
+  }
+  

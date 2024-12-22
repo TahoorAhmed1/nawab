@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Static bundle files
+*.cache
+*.tmp
+*.gz
+
+# Testing
+coverage/
+*.lcov
+jest-test-results.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+public/*.cache
+public/*.map
+
+# Ignore any compiled code or other config artifacts
+*.babelrc
+*.eslintcache

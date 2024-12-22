@@ -1,0 +1,47 @@
+.form1-back img {
+    width: 100%; 
+    max-width: none;                
+    height: 40vh; 
+    object-fit: cover; 
+  }
+
+ @media screen and (max-width: 3000px) {
+  .my-trade-3000{
+    margin-top: -120px;
+  }
+ }
+
+ @media screen and (max-width: 2500px) {
+  .my-trade-3000{
+    margin-top: 30px;
+  }
+ }
+
+
+
+
+
+ @media screen and (max-width: 1350px) {
+  .info-text{
+    font-size: 14px;
+  }
+ }
+
+
+ @media screen and (max-width: 1160px) {
+ .card-bhai {
+  width: 350px;
+ }
+ }
+
+
+ @media screen and (max-width: 390px) {
+  .card-bhai {
+   width: 300px;
+  }
+
+  .info-text{
+    font-size: 13px;
+  }
+  }
+ 

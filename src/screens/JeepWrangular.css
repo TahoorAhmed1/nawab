@@ -1,0 +1,146 @@
+@media(max-width:600px){
+    .same-to{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+.jepp-btn{
+    transition: .4s ease-in-out;
+    background-color:#F40000;
+    text-align: center;
+    border: 2px solid #F40000;
+}
+
+
+
+.jepp-btn:hover{
+    background-color: black;
+    border-color: black;
+    transition: .4s ease-in-out
+}
+
+
+.gepp-black{
+    transition: .4s ease-in-out;
+    border: 2px solid #F40000;
+
+}
+
+.gepp-black:hover{
+    border-color: black;
+    transition: .4s ease-in-out;
+}
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 527px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid #F40000;
+    border-radius: 21px;
+}
+  
+  .popup-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    width: 58px;
+  }
+  
+  .popup-arrow-left, .popup-arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    background: #F40000;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    width: 63px;
+    height: 63px;
+    border-radius: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .popup-arrow-left {
+    left: 10px;
+  }
+  
+  .popup-arrow-right {
+    right: 10px;
+  }
+  
+  .description_title {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Roboto-Regular;
+    color: #333;
+}
+.detail-flexbox {
+  display: -moz-box;
+  display: flex;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.detail-flexbox .item {
+  position: relative;
+  width: 33.3%;
+  /* padding: 16px; */
+  height: 277px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.detail-flexbox .item:hover img {
+  opacity: 1;
+}
+
+.detail-flexbox .item img {
+  width: 100%;
+  display: block;
+  transition: all .8s;
+  object-fit: cover;
+  height: 100%;
+}
+.divider img {
+  height: 200px;
+}

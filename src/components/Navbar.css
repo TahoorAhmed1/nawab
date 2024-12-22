@@ -1,0 +1,97 @@
+.navbar-background-img{
+  /* background: linear-gradient(180deg, #26262670 35%, #26262670 66%, #26262670 88%, transparent); */
+  background: linear-gradient(to bottom, 
+  #111111 15%,      
+  #111111 50%,     
+  #111111 80%,     
+  #111111 100%  ,
+  transparent   
+  );
+
+}
+
+ .home-pr-color{
+  background-color: transparent;
+  font-size: 16px;
+ }
+
+
+
+@media (min-width: 1070px) {
+ .main-logo-img{
+  width: 200px;
+  padding-bottom: 10px;
+ }
+}
+
+@media (min-width: 1050px) {
+  .main-logo-img{
+   width: 200px;
+   padding-bottom: 10px;
+  }
+ }
+@media (max-width: 999px) {
+    .icon {
+      display: none; 
+    }
+    
+    .main-logo-img{
+      width: 200px;
+      padding-bottom: 10px;
+     }
+  }
+  
+
+  @media (min-width: 1000px) {
+    .icon {
+      display: inline; 
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .main-logo-img{
+      width: 150px;
+      margin-top: 20px;
+    }
+  }
+
+
+  @media (max-width: 800px) {
+    .navbar-background-img.fixed-navbar{
+      
+    background: black;
+    position: relative;
+
+    }
+    .navbar-background-img{
+      justify-content: space-between;
+      padding: 0px 10px;
+    }
+  } 
+
+  @media screen and (max-width: 440px) {
+    .phone-nav{
+      font-size: 14px;
+    }
+  }
+
+  
+  .navbar-background-img.fixed-navbar {
+    background: linear-gradient(180deg,#262626 35%,rgba(59,59,59,.8239670868) 66%,rgba(33,33,33,.3645833333) 88%,transparent);
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+select.bgvlassic {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+select.bgvlassic:focus {
+  outline: none;
+}
+select.bgvlassic option {
+  background: black;
+  color: white;
+}

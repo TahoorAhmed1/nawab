@@ -1,0 +1,49 @@
+form.formCalculate {
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+form.formCalculate .formBorder .headerForm {
+    background-color: #d9d9d9;
+    color: #000 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 17px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+form.formCalculate .formBorder .headerForm h3 {
+    margin-bottom: inherit;
+    font-size: 14px;
+    width: 50%;
+}
+
+form.formCalculate .formBorder .headerForm button#calculate {
+    display: flex;
+}
+
+form.formCalculate .formBorder .headerForm button#calculate .calc-reset {
+    display: flex;
+    align-items: center;
+}
+form.formCalculate .formBorder .input-space {
+    padding: 5px 17px;
+}
+
+form.formCalculate .formBorder .input-space fieldset {
+    font-size: 14px;
+    padding: 10px 0px;
+}
+button#ccalculation {
+    background: #f40000;
+    border: 2px solid #f40000;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 0 !important;
+    color: #fff;
+    text-transform: uppercase !important;
+}

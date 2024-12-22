@@ -1,0 +1,477 @@
+
+.form1-back img {
+    width: 100%;
+    max-width: none;                 
+    height: 40vh; 
+    object-fit: cover; 
+  }
+
+  .container-web {
+    @apply max-w-[1900px] mx-auto xl:px-20 lg:px-16 md:px-8 px-4
+
+}
+
+
+.FooterBack{
+    background-image:url("./assets/footer-background.png") ;
+    width:100%;
+    z-index:-50;
+    background-color: black;
+    height:fit-content    ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+.HomeBanner{
+    background-image:url("./assets/homeBanner.png") ;
+    width:100%;
+    z-index: 10;
+    height:fit-content    ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+.contact-infoo{
+    margin-right: 50vw;
+    display: none;
+}
+
+
+.card-btn{
+    padding: 6px 2vw;
+}
+
+.c-btn-2{
+    padding: 8px 2vw;
+}
+
+@media(max-width:3000px) {
+.last-contact-us{
+    margin-top: -22vw;
+   width: 60%;
+    /* margin-left: -80%; */
+}
+
+.last-contact-info{
+    width: 60%;
+    margin-right: -16vw;
+    margin-top: 4vw;
+
+}
+
+.footer-contact-3000{
+    margin-top: -500px;
+}
+}
+
+@media(max-width:2500px) {
+    .last-contact-us{
+        margin-top: -18vw;
+       width: 60%;
+    /* margin-left: -60%; */
+
+    }
+    
+    .last-contact-info{
+        width: 50%;
+        margin-right: -12vw;
+        margin-top: 4vw;
+    
+    }
+
+    .footer-contact-3000{
+        margin-top: -400px;
+    }
+    }
+
+
+    @media(max-width:2000px) {
+        .last-contact-us{
+            margin-top: -15vw;
+            width: 80%;
+            /* margin-left: -50%; */
+
+        }
+        
+        .last-contact-info{
+            width: 40%;
+            margin-right: -8vw;
+            margin-top: 4vw;
+        
+        }
+
+        .footer-contact-3000{
+            margin-top: -300px;
+        }
+}
+    
+
+@media(max-width:1900px) {
+    .last-contact-us{
+        margin-top: -8vw;
+        width: 60%;
+    }
+    
+    .last-contact-info{
+        width: 40%;
+        margin-right: -8vw;
+        margin-top: 4vw;
+    
+    }
+
+
+    .footer-contact-3000{
+        margin-top: -200px;
+    }
+}
+
+
+@media(max-width:1700px) {
+    .last-contact-us{
+        margin-top: -8vw;
+        width: 60%;
+    }
+    
+    .last-contact-info{
+        width: 35%;
+        margin-right: 0vw;
+        margin-top:  2vw;
+    
+    }
+
+    .footer-contact-3000{
+        margin-top: -100px;
+    }
+}
+
+
+@media(max-width:1600px) {
+    .last-contact-us{
+        margin-top: -2vw;
+       width: 60%;
+        /* margin-left: -40%; */
+
+    }
+    
+    .last-contact-info{
+        width: 30%;
+        margin-right: 0vw;
+        margin-top:  2vw;
+    
+    }
+
+    .footer-contact-3000{
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:1450px) {
+    .img-set-12{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .last-contact-us{
+        margin-top: 1vw;
+        width: 60%;
+    }
+    
+    .last-contact-info{
+        width: 30%;
+        margin-right: 0vw;
+        margin-top:  2vw;
+    
+    }
+}
+
+
+
+@media(max-width:1410px) {
+    .card-btn{
+        padding: 6px 1.2vw;
+    }
+    
+    .c-btn-2{
+        padding: 8px 1.2vw;
+    }
+}
+
+
+ 
+.contact-uss{
+    justify-content: flex-start;
+}
+@media screen and (max-width:1285px) {
+    .last-contact-us{
+        margin-top: 1vw;
+        width: 60%;
+        /* margin-left: -50%; */
+
+    }
+    
+    .last-contact-info{
+        width: 40%;
+        margin-right: -5vw;
+        margin-top:  2vw;
+    
+    }
+}
+
+
+
+@media screen and (max-width:1190px) {
+    .txt-size{
+        font-size: 14px;
+    }
+
+    .card-btn{
+        padding: 4px .6vw;
+    }
+    
+    .c-btn-2{
+        padding: 6px .6vw;
+    }
+
+    .call-price{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .txt-size{
+        font-size: 12px;
+    }
+
+    .card-btn{
+        padding: 3px .5vw;
+        font-size: 13px;
+    }
+    
+    .c-btn-2{
+        padding: 5px .5vw;
+        font-size: 13px;
+    }
+
+}
+@media screen and (max-width:1060px) {
+    .last-contact-us{
+        margin-top: 1vw;
+        width: 50%;
+    }
+    
+    .last-contact-info{
+        width: 40%;
+        margin-right: 0vw;
+        margin-top:  2vw;
+    
+    }
+
+    .card-btn{
+        padding: 4px 3vw;
+    }
+    
+    .c-btn-2{
+        padding: 6px 3vw;
+    }
+
+    .card-btn{
+        font-size: 15px;
+    }
+
+    .txt-size{
+        font-size: 14px;
+    }
+
+    .call-price{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:1026px) {
+
+
+    .last-contact-us{
+        margin-top: 1vw;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 30px;
+       
+    }
+
+   
+   
+
+    .contact-info{
+        display: none;
+    }
+    
+    .contact-infoo{
+        display: flex;
+        width:  70vw;
+        margin-left: 50vw;
+    }
+}
+
+@media screen and (max-width:935px) {
+.card-btn{
+    font-size: 12px;
+    padding: 6px 14px;
+}
+
+.c-btn-2{
+    padding: 8px 12px;
+}
+
+}
+@media screen and (max-width:840px) {
+
+
+   
+
+    .contact-info{
+        width: 260px;
+        font-size: 15px;
+        
+    }
+
+    .contact-info strong{
+        font-size: 13px;
+    }
+
+   
+    .c-btn-2{
+        padding: 8px 12px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    
+    .apply{
+    width: 100%;
+    }
+    }
+       
+
+@media (max-width:768px){
+    .imges{
+        margin-top: -10px;
+    }
+
+    .card-btn{
+        padding: 6px 15vw;
+        font-size: 15px;
+    }
+    
+    .c-btn-2{
+        padding: 8px 15vw;
+    }
+}
+
+
+@media (max-width:600px){
+    .card-btn{
+        padding: 6px 10vw;
+        font-size: 15px;
+    }
+    
+    .c-btn-2{
+        padding: 8px 10vw;
+    }
+
+    .toranto{
+        width: 80vw;
+        margin: 10px 0px;
+    }
+
+    .invent-text span{
+        font-size: 3vw;
+    }
+
+
+    .contact-infoo{
+        display: flex;
+        width:  70vw;
+        margin-left: 50vw;
+    }
+    
+    .last-contact-us{
+        margin-top: 1vw;
+        width: 70vw;
+        margin: 0 auto;
+        margin-top: 30px;
+
+       
+    }
+}
+
+
+
+
+@media (max-width:480px){
+    .contact-infoo{
+        display: flex;
+        width:  80vw;
+        margin-left: 50vw;
+    }
+    
+    .last-contact-us{
+        margin-top: 1vw;
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 30px;
+
+       
+    }
+}
+
+
+
+@media (max-width:460px){
+    .home-sec{
+        width: 100%;
+        height: auto;
+    }
+
+    .imges{
+        margin-top: -180px;
+    }
+}
+
+@media (max-width:420px){
+    .contact-infoo{
+        display: flex;
+        width:  80vw;
+        margin-left: 50vw;
+        font-size: 13px;
+    }
+
+    .card-btn{
+        padding: 6px 6vw;
+        font-size: 15px;
+    }
+    
+    .c-btn-2{
+        padding: 8px 6vw;
+    }
+}
+
+
+@media (max-width:380px){
+    .imges{
+        margin-top: -60px;
+    }
+}
+
+
+@media (max-width:365px){
+    .imges{
+        margin-top: -140px;
+    }
+}
+
+.background-img-sec-rs a {
+    position: relative;
+    z-index: 1;
+}
