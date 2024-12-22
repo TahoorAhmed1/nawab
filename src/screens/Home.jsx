@@ -579,9 +579,10 @@ const Home = () => {
                 className="brand-swiper"
               >
                 {brandsView.map((item, index) => (
-                  <SwiperSlide key={index} className="swipeMakeQuick">
+                  <SwiperSlide key={index} className="swipeMakeQuick">x
                     <Link
-                      href={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=&model=${index}`}
+                      // href={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=&model=${index}`}
+                      href=""
                       className="block px-2"
                     >
                       <div className="relative h-[110px] flex items-center justify-center transition-transform duration-300 hover:scale-105">

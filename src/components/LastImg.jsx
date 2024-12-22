@@ -9,11 +9,7 @@ const LastImg = () => {
         backgroundImage: "url(../assets/homeServices.png)", // Fallback background for unsupported media types
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "-webkit-fill-available",
-        width: "100%",
-        position: "absolute",
-        top: 0,
-        left: 0,
+       
         zIndex: -1,
       }}
        className=" bg-cover bg-center h-auto  text-white  lg:py-28">
@@ -22,9 +18,9 @@ const LastImg = () => {
         
            <div className="w-full max-w-[806px] h-auto lg:h-[302px] text-white  flex flex-col justify-center items-center">
         <div className="flex flex-col items-center gap-6 text-left">
-            <p className="text-[17px] font-extralight  w-full">Serving the SONI AUTO MARKETS, located at 456 New Place, Moose Jaw, SK S6H 2B2, Canada.</p >
-            <p className="text-[17px] font-extralight  w-full">We have a strong and committed sales staff with many years of experience satisfying our customers’ needs.</p >
-            <p className="text-[17px] font-extralight  w-full">Feel free to browse our inventory online, request more information about vehicles, set up a test drive or inquire about financing!</p>
+            <p className="text-[17px]  font-sans  w-full">Serving the SONI AUTO MARKETS, located at 456 New Place, Moose Jaw, SK S6H 2B2, Canada.</p >
+            <p className="text-[17px]   font-sans w-full">We have a strong and committed sales staff with many years of experience satisfying our customers’ needs.</p >
+            <p className="text-[17px]   font-sans w-full">Feel free to browse our inventory online, request more information about vehicles, set up a test drive or inquire about financing!</p>
         </div>
         <div className="grid grid-cols-4 mt-8 w-full flex-wrap gap-6">
             <img width={1000} className="w-[156.91px]" src="../assets/carfaxcanada_icon.png.png" alt="Car" />
