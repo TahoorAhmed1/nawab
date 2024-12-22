@@ -46,7 +46,7 @@ const SimpleDropdown = ({ title, options, links, style }) => {
             {options.map((option, index) => (
               <Link
                 key={index}
-                to={links[index]}
+                to={"#"}
                 onClick={closeDropdown}
                 className="block px-4 py-2 text-lg text-white w-full text-left hover:bg-gray-700"
                 role="menuitem"

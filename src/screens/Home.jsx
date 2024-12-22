@@ -644,7 +644,8 @@ const Home = () => {
                 {bodyTypesView.map((item, index) => (
                   <SwiperSlide key={index}>
                     <Link
-                      to={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=${index}&model=}`}
+                      // to={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=${index}&model=}`}
+                      to={"#"}
                       className="swipeMakeQuick flex flex-col items-center  "
                     >
                       <img

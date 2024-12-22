@@ -158,8 +158,8 @@ const Navbar = () => {
               {/* Left Section for Home */}
               <div className="flex-shrink-0 text-center mr-8">
                 <Link
-                  className=" font-normal font-sans  text-[14px] hoverr  navbar-wala-bg home-pr-color"
-                  to="/"
+                  className=" font-normal font-sans  text-[14px] hoverr  text-white"
+                  to="#"
                 >
                   HOME
                 </Link>
