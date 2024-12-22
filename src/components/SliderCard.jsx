@@ -4,33 +4,50 @@ import InstagramCard from "./Cards";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const posts = [
+const vehicles = [
   {
-    imgSrc: "../assets/post2.jpg.png",
-    likes: "573",
-    description: "SoniAutoMarket AUDI S6 KEEPING CALM IN THE STORM! 😎",
+    id: 1,
+    year: 2022,
+    make: "Ferrari",
+    model: "F8",
+    price: 690000,
+    mileage: 104,
+    transmission: "transmission",
+    image: "../assets/post2.jpg.png",
   },
   {
-    imgSrc: "../assets/post3.jpg.png",
-    likes: "1084",
-    description:
-      "SoniAutoMarket M550i Landed in stock✅ #soniautomarket #weselldreams #bmw #m550i",
+    id: 2,
+    year: 2021,
+    make: "Mercedes",
+    model: "AMG GT",
+    price: 549999,
+    mileage: 3655,
+    transmission: "transmission",
+    image: "../assets/post3.jpg.png",
   },
   {
-    imgSrc: "../assets/post4.jpg.png",
-    likes: "1510",
-    description:
-      "SoniAutoMarket Can you guess what car it is? #soniautomarket #weselldreams #viral",
+    id: 3,
+    year: 2023,
+    make: "Lamborghini",
+    model: "Urus",
+    price: 479999,
+    mileage: 4431,
+    transmission: "transmission",
+    image: "../assets/post4.jpg.png",
   },
   {
-    imgSrc: "../assets/post5.jpg.png",
-    likes: "2872",
-    description:
-      "SoniAutoMarket BOSS WHIP FOR WINTERS❄️ #soniautomarket #weselldreams",
+    id: 4,
+    year: 2020,
+    make: "Rolls-Royce",
+    model: "Cullinan",
+    price: 349698,
+    mileage: 16850,
+    transmission: "transmission",
+    image: "../assets/post5.jpg.png",
   },
 ];
 
-const AutoPlaySlider = () => {
+const   AutoPlaySlider = () => {
   const sliderRef = useRef(null);
 
   const settings = {
@@ -81,18 +98,21 @@ const AutoPlaySlider = () => {
   return (
     <div className="w-full ">
     <div className="relative h-auto">
-      <Slider ref={sliderRef} {...settings} >
-        {posts.map((post, index) => (
-         <div
-         key={index}
-         className="pr-5 "
-       >
-            <InstagramCard
-              imgSrc={post.imgSrc}
-              likes={post.likes}
-              description={post.description}
-            />
-          </div>
+      <Slider ref={sliderRef} {...settings} className="custom-slider">
+        
+        {vehicles.map((vehicle, index) => (
+     
+                <InstagramCard
+               imgSrc={vehicle.image}
+               likes={vehicle.likes}
+               description={vehicle.description}
+               year={vehicle.year}
+               make={vehicle?.make}
+               price={vehicle?.price}
+               model={vehicle?.model}
+               mileage={vehicle?.mileage}
+               transmission={vehicle?.transmission}
+             />
         ))}
       </Slider>
     </div>

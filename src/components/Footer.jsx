@@ -13,7 +13,7 @@ import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa"
 //   </div>
 //   <div className="footerr   text-white">
 //     <div style={{marginRight:'70px'}} >
-//       <h4 className="heading text-lg " style={{fontWeight:'bold'}}>
+//       <h4 className="heading text-xl " style={{fontWeight:'bold'}}>
 //         Dealership
 //       </h4>
 //       <p style={{fontSize:"14px"}} className="footer-p">
@@ -33,7 +33,7 @@ import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa"
 //   <div className="f-all-text " style={{lineHeight:"30px"}}>
 
 //   <div>
-//       <h4 className="heading text-lg" style={{fontWeight:'bold'}}>
+//       <h4 className="heading text-xl" style={{fontWeight:'bold'}}>
 //       Our Hours
 //       </h4>
 //       <p className="text-sm mt-2">Monday</p>
@@ -54,7 +54,7 @@ import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa"
 //       <p className="text-sm  mt-2" >11:00 AM - 07:00 PM</p>
 //     </div>
 //     <div>
-//       <h4 className="heading text-lg" style={{fontWeight:'bold'}}>
+//       <h4 className="heading text-xl" style={{fontWeight:'bold'}}>
 //       Our Contacts
 //       </h4>
 //       <h6 style={{color:'red'}}>Call us +1 93843-34934-32</h6>
@@ -80,7 +80,7 @@ import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa"
       
       
 //               </div>
-//               <h4 className="heading text-lg" style={{ fontWeight: 'bold' }}>
+//               <h4 className="heading text-xl" style={{ fontWeight: 'bold' }}>
 //                 Our Location
 //               </h4>
 //               <p>456 New Place, Moose Jaw, SK S6H 2B2, Canada</p>
@@ -124,7 +124,7 @@ export  default function Footer() {
 
         <div className="grid grid-cols-1  md:grid-cols-[2fr,2fr,2fr] gap-8 lg:gap-16">
           <div className="space-y-3">
-            <h4 className="text-lg font-bold">Dealership</h4>
+            <h4 className="text-xl font-bold">Dealership</h4>
             <p className="text-sm leading-relaxed max-w-md">
               Welcome to Soni Auto Market, your premier destination for quality vehicles and 
               exceptional service. With over 17 years of experience in the automotive industry, 
@@ -145,7 +145,12 @@ export  default function Footer() {
 
           {/* Hours Section */}
           <div>
-            <h4 className="text-lg font-bold mb-4">Our Hours</h4>
+            <h4 className="text-xl font-bold mb-4"> <span className="border-b-2 border-[#F40000]">
+
+               Ou
+              </span>
+               r
+                Hours</h4>
             <div className="grid grid-cols-2 gap-x-4 text-sm">
               <div className="space-y-2">
                 <p>Monday</p>
@@ -171,7 +176,12 @@ export  default function Footer() {
           {/* Contact and Locations Section */}
           <div className="space-y-3">
             <div>
-              <h4 className="text-xl font-bold mb-2">Our Contacts</h4>
+              <h4 className="text-xl font-bold mb-2"> <span className="border-b-2 border-[#F40000]">
+
+                 Ou
+                </span>
+                 r
+                  Contacts</h4>
               <p className="text-red-500 mb-1">Call us <span className="text-white">+1 93843-34934-32</span> </p>
               <p className="text-sm">456 New Place, Moose Jaw, SK S6H 2B2, Canada</p>
 
@@ -180,7 +190,7 @@ export  default function Footer() {
   
 
             <div>
-              <h4 className="text-lg font-bold mb-1">Browse by Location:</h4>
+              <h4 className="text-xl font-bold mb-1">Browse by Location:</h4>
               <div className="grid grid-cols-1 gap-1 text-sm">
                 <Link href="#" className="hover:text-primary">Used Cars in Toronto, ON</Link>
                 <Link href="#" className="hover:text-primary">Used Cars in Brampton, ON</Link>
@@ -190,7 +200,7 @@ export  default function Footer() {
             </div>
 
             <div>
-              <h4 className="text-lg font-bold mb-1">Sell My Car:</h4>
+              <h4 className="text-xl font-bold mb-1">Sell My Car:</h4>
               <div className="grid grid-cols-1 gap-1 text-sm">
                 <Link href="#" className="hover:text-primary">Sell My Car in Toronto</Link>
                 <Link href="#" className="hover:text-primary">Sell My Car in Mississauga</Link>

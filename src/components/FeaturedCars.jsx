@@ -1,9 +1,4 @@
-// import Image from "next/image";
-// import { Button } from "@/components/ui/button";
-// import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Link } from "react-router-dom";
-import testCar from "../assets/testCars.jpg";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+
 import InstagramCard from "./Cards";
 
 const vehicles = [
@@ -67,7 +62,7 @@ function FeaturedCars() {
                transmission={vehicle?.transmission}
              />
           ))}
-        </div>
+        </div>  
 
        
     

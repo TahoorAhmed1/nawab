@@ -6,13 +6,27 @@
 
 
     .hover-btn-sary{
-    background-color: #F40000;
+
+    border: 2px solid #F40000;
     transition: .4s ease-in-out;
    }
 
 
     
 
+   .custom-slider .slick-slide {
+    padding: 0 16px; /* Adjust gap as needed */
+  }
+  
+  .custom-slider .slick-list {
+    margin: 0 -16px; /* Match padding for alignment */
+  }
+  
+  .custom-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 .hover-btn-sary:hover{
     background-color:  black;

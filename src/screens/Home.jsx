@@ -317,216 +317,298 @@ const Home = () => {
             }}
           ></div>
         )}
-<div className="container-web">
-        <div className="flex flex-col items-center justify-center min-h-screen ">
-          <div
-            style={{ width: "100%", marginTop: "130px" }}
-            className="bg-black bg-opacity-50 text-white text-center py-8 px-16 w-full rounded-lg"
-          >
-            <h1 className="text-2xl  font-sans text-center md:text-5xl font-semibold mb-6">
-              WELCOME TO{" "}
-              <span style={{ color: "#F40000" }}>SONI AUTO MARKET</span>
-            </h1>
+        <div className="container-web">
+          <div className="flex flex-col items-center justify-center min-h-screen ">
+            <div
+              style={{ width: "100%", marginTop: "130px" }}
+              className="bg-black bg-opacity-50 text-white text-center py-8 px-16 w-full rounded-lg"
+            >
+              <h1 className="text-2xl  font-sans text-center md:text-5xl font-semibold mb-6">
+                WELCOME TO{" "}
+                <span style={{ color: "#F40000" }}>SONI AUTO MARKET</span>
+              </h1>
 
-            {/* Input Row */}
-            <div className="flex flex-col items-center gap-4 w-full drop-home-wala">
-              <input
-                type="text"
-                placeholder="Find Your Car (Year Make Model)"
-              className="w-full py-2 px-6 bg-transparent rounded-lg border border-[#FFFFFF]  text-[#FFFFFF] placeholder:text-[#FFFFFF]"
-                value={searchKey}
-                onChange={handleSearchInput}
-              />
+              {/* Input Row */}
+              <div className="flex flex-col items-center gap-4 w-full drop-home-wala">
+                <input
+                  type="text"
+                  placeholder="Find Your Car (Year Make Model)"
+                  className="w-full py-2 px-6 bg-transparent rounded-lg border border-[#FFFFFF]  text-[#FFFFFF] placeholder:text-[#FFFFFF]"
+                  value={searchKey}
+                  onChange={handleSearchInput}
+                />
 
-              {/* Dropdown List */}
-              {dropdownVisible && (
-                <div
-                  className="w-full bg-white text-black mt-1 rounded shadow-lg z-10"
-                  style={{
-                    position: "absolute",
-                    transform: "translate(0px, 41px)",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    width: "91%",
-                  }}
-                >
-                  {carsSearch.map((car) => (
-                    <Link
-                      key={car.id}
-                      to={`/car-details/${car.id}`}
-                      style={{
-                        padding: "0px 10px",
-                        border: "1px solid black",
-                        margin: "10px",
-                        display: "block",
-                        borderRadius: "114px",
-                      }}
-                    >
-                      <div
-                        className="p-2 cursor-pointer"
-                        onClick={() => {
-                          setSearchKey(car.title); // Set selected car title to input
-                          setDropdownVisible(false); // Hide dropdown
-                        }}
+                {/* Dropdown List */}
+                {dropdownVisible && (
+                  <div
+                    className="w-full bg-white text-black mt-1 rounded shadow-lg z-10"
+                    style={{
+                      position: "absolute",
+                      transform: "translate(0px, 41px)",
+                      marginLeft: "auto",
+                      marginRight: "auto",
+                      width: "91%",
+                    }}
+                  >
+                    {carsSearch.map((car) => (
+                      <Link
+                        key={car.id}
+                        to={`/car-details/${car.id}`}
                         style={{
-                          display: "flex",
-                          justifyContent: "space-between",
-                          alignItems: "center",
+                          padding: "0px 10px",
+                          border: "1px solid black",
+                          margin: "10px",
+                          display: "block",
+                          borderRadius: "114px",
                         }}
                       >
-                        <span>
-                          {car.title} - {car.year} ({car.kilometer} km)
-                        </span>
-                        <FaArrowRight />
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              )}
-
-              {/* Dropdowns and Search Button Row */}
-              <div className="flex justify-center items-center gap-x-[20px] w-[92%] ">
-                {/* Make Dropdown */}
-                <div className="relative w-[100%] mt-6">
-                  <select
-                    className="w-full p-2 border appearance-none pr-8 text-black modelsBrands"
-                    onChange={(e) => setMake(e.target.value)}
-                  >
-                    <option value="">Make</option>
-                    {makes.map((make) => (
-                      <option key={make.id} value={make.id}>
-                        {make.title}
-                      </option>
+                        <div
+                          className="p-2 cursor-pointer"
+                          onClick={() => {
+                            setSearchKey(car.title); // Set selected car title to input
+                            setDropdownVisible(false); // Hide dropdown
+                          }}
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                          }}
+                        >
+                          <span>
+                            {car.title} - {car.year} ({car.kilometer} km)
+                          </span>
+                          <FaArrowRight />
+                        </div>
+                      </Link>
                     ))}
-                  </select>
-                </div>
+                  </div>
+                )}
 
-                {/* Model Dropdown */}
-                <div className="relative w-[100%] mt-6">
-                  <select
-                    className="w-full p-2 border appearance-none pr-8 text-black modelsBrands"
-                    onChange={(e) => setModel(e.target.value)}
+                {/* Dropdowns and Search Button Row */}
+                <div className="flex justify-center items-center gap-x-[20px] w-[92%] ">
+                  {/* Make Dropdown */}
+                  <div className="relative w-[100%] mt-6">
+                    <select
+                      className="w-full p-2 border appearance-none pr-8 text-black modelsBrands"
+                      onChange={(e) => setMake(e.target.value)}
+                    >
+                      <option value="">Make</option>
+                      {makes.map((make) => (
+                        <option key={make.id} value={make.id}>
+                          {make.title}
+                        </option>
+                      ))}
+                    </select>
+                    <span
+                      className=" text-[#CCCCCC] mx-2 absolute top-0.5 right-8 z-50 "
+                      style={{ fontSize: "20px" }}
+                    >
+                      |
+                    </span>
+                    <span className="text-black">
+                      <svg
+                        className=" absolute right-2 top-2 z-50 w-8 h-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06 0L10 10.5l3.71-3.29a.75.75 0 111.04 1.08l-4.25 3.75a.75.75 0 01-1.04 0l-4.25-3.75a.75.75 0 010-1.08z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+
+                  {/* Model Dropdown */}
+                  <div className="relative w-[100%] mt-6">
+                    <select
+                      className="w-full p-2 border appearance-none pr-8 text-black modelsBrands"
+                      onChange={(e) => setModel(e.target.value)}
+                    >
+                      <option value="">Model</option>
+                      {models.map((model) => (
+                        <option key={model.id} value={model.id}>
+                          {model.title}
+                        </option>
+                      ))}
+                    </select>
+                    <span
+                      className=" text-[#CCCCCC] mx-2 absolute top-0.5 right-8 z-50 "
+                      style={{ fontSize: "20px" }}
+                    >
+                      |
+                    </span>
+                    <span className="text-black">
+                      <svg
+                        className=" absolute right-2 top-2 z-50 w-8 h-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06 0L10 10.5l3.71-3.29a.75.75 0 111.04 1.08l-4.25 3.75a.75.75 0 01-1.04 0l-4.25-3.75a.75.75 0 010-1.08z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+
+                  {/* Min Year Dropdown */}
+                  <div className="relative w-[100%] mt-6">
+                    <select
+                      className="w-full p-2 border appearance-none pr-8 text-black"
+                      onChange={(e) => setMinYear(e.target.value)}
+                    >
+                      <option value="">Min Year</option>
+                      {minYearOptions.map((year) => (
+                        <option key={year} value={year}>
+                          {year}
+                        </option>
+                      ))}
+                    </select>
+                    <span
+                      className=" text-[#CCCCCC] mx-2 absolute top-0.5 right-8 z-50 "
+                      style={{ fontSize: "20px" }}
+                    >
+                      |
+                    </span>
+                    <span className="text-black">
+                      <svg
+                        className=" absolute right-2 top-2 z-50 w-8 h-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06 0L10 10.5l3.71-3.29a.75.75 0 111.04 1.08l-4.25 3.75a.75.75 0 01-1.04 0l-4.25-3.75a.75.75 0 010-1.08z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+
+                  {/* Max Year Dropdown */}
+                  <div className="relative w-[100%] mt-6">
+                    <select
+                      className="w-full p-2 border appearance-none pr-8 text-black"
+                      onChange={(e) => setMaxYear(e.target.value)}
+                    >
+                      <option value="">Max Year</option>
+                      {maxYearOptions.map((year) => (
+                        <option key={year} value={year}>
+                          {year}
+                        </option>
+                      ))}
+                    </select>
+                    <span
+                      className=" text-[#CCCCCC] mx-2 absolute top-0.5 right-8 z-50 "
+                      style={{ fontSize: "20px" }}
+                    >
+                      |
+                    </span>
+                    <span className="text-black">
+                      <svg
+                        className=" absolute right-2 top-2 z-50 w-8 h-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06 0L10 10.5l3.71-3.29a.75.75 0 111.04 1.08l-4.25 3.75a.75.75 0 01-1.04 0l-4.25-3.75a.75.75 0 010-1.08z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+
+                  {/* Search Button */}
+                  <button
+                    style={{ padding: "10px 30px" }}
+                    className="text-white rounded w-full search-wala-button hover-btn-sary bg-[#F40000] border-0 font-medium"
+                    onClick={handleSearch}
                   >
-                    <option value="">Model</option>
-                    {models.map((model) => (
-                      <option key={model.id} value={model.id}>
-                        {model.title}
-                      </option>
-                    ))}
-                  </select>
+                    Search
+                  </button>
                 </div>
+              </div>
 
-                {/* Min Year Dropdown */}
-                <div className="relative w-[100%] mt-6">
-                  <select
-                    className="w-full p-2 border appearance-none pr-8 text-black"
-                    onChange={(e) => setMinYear(e.target.value)}
-                  >
-                    <option value="">Min Year</option>
-                    {minYearOptions.map((year) => (
-                      <option key={year} value={year}>
-                        {year}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                {/* Max Year Dropdown */}
-                <div className="relative w-[100%] mt-6">
-                  <select
-                    className="w-full p-2 border appearance-none pr-8 text-black"
-                    onChange={(e) => setMaxYear(e.target.value)}
-                  >
-                    <option value="">Max Year</option>
-                    {maxYearOptions.map((year) => (
-                      <option key={year} value={year}>
-                        {year}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                {/* Search Button */}
-                <button
-                  style={{ padding: "10px 30px" }}
-                  className="text-white rounded w-full search-wala-button hover-btn-sary"
-                  onClick={handleSearch}
+              <div className="mt-6 text-center ">
+                <Link
+                  href="/car-details-search/brand=&min_price=&max_price=10000&min_year=&max_year=&color=&engine=&fuel_type=&body_style=1&model="
+                  className="inline-block px-10 font-medium  text-center mr-12 py-2.5 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
                 >
-                  Search
-                </button>
+                  <p>Cars above $10000</p>
+                </Link>
               </div>
             </div>
-
-            <div className="mt-6 text-center ">
-          <Link 
-            href="/car-details-search/brand=&min_price=&max_price=10000&min_year=&max_year=&color=&engine=&fuel_type=&body_style=1&model="
-            className="inline-block px-10 font-medium  text-center mr-12 py-2.5 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
-          >
-          <p>Cars above $10000</p>  
-          </Link>
-        </div>
           </div>
         </div>
-</div>
       </div>
 
       <section className="quickSearchByMake py-20 mt-8">
-      <div className="text-center mb-[55px]">
-        <h1 className="text-3xl md:text-5xl font-semibold font-sans">
-          QUICK SEARCH BY<span className="text-[#F40000]"> MAKE</span>
-        </h1>
-      </div>
+        <div className="text-center mb-[55px]">
+          <h1 className="text-3xl md:text-5xl font-semibold font-sans">
+            QUICK SEARCH BY<span className="text-[#F40000]"> MAKE</span>
+          </h1>
+        </div>
 
-      <div className="container mx-auto px-4">
-        {brandsView.length > 0 ? (
-          <div className="slider-container">
-            <Swiper
-              modules={[Navigation]}
-              spaceBetween={20}
-           
-              slidesPerView={brandsView.length < 6 ? brandsView.length : 6}
-              breakpoints={{
-                1280: { slidesPerView: 6 }, // XL screens
-                1024: { slidesPerView: 5 }, // Desktop
-                768: { slidesPerView: 3 },  // Tablet
-                640: { slidesPerView: 2 },  // Small tablet
-                480: { slidesPerView: 1 },  // Mobile
-              }}
-              className="brand-swiper"
-            >
-              {brandsView.map((item, index) => (
-                <SwiperSlide key={index} className="swipeMakeQuick">
-                  <Link
-                    href={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=&model=${index}`}
-                    className="block px-2"
-                  >
-                    <div className="relative h-[110px] flex items-center justify-center transition-transform duration-300 hover:scale-105">
-                      <img
-                        className={`h-auto max-h-[110px] w-auto max-w-[150px] object-contain ${
-                          item.img ? "" : "defaultimg"
-                        }`}
-                        src={item.img}
-                        alt={item.label}
-                      />
-                    </div>
-                  </Link>
-                </SwiperSlide>
-              ))}
-       
-            </Swiper>
-          </div>
-        ) : (
-          <p className="text-center">Loading body types...</p>
-        )}
-      </div>
-    </section>
+        <div className="container mx-auto px-4">
+          {brandsView.length > 0 ? (
+            <div className="slider-container">
+              <Swiper
+                modules={[Navigation]}
+                spaceBetween={20}
+                
+                slidesPerView={brandsView.length < 6 ? brandsView.length : 6}
+                breakpoints={{
+                  1280: { slidesPerView: 6 }, // XL screens
+                  1024: { slidesPerView: 5 }, // Desktop
+                  768: { slidesPerView: 3 }, // Tablet
+                  640: { slidesPerView: 2 }, // Small tablet
+                  480: { slidesPerView: 1 }, // Mobile
+                }}
+                className="brand-swiper"
+              >
+                {brandsView.map((item, index) => (
+                  <SwiperSlide key={index} className="swipeMakeQuick">
+                    <Link
+                      href={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=&model=${index}`}
+                      className="block px-2"
+                    >
+                      <div className="relative h-[110px] flex items-center justify-center transition-transform duration-300 hover:scale-105">
+                        <img
+                          className={`h-auto max-h-[110px] w-auto max-w-[150px] object-contain ${
+                            item.img ? "" : "defaultimg"
+                          }`}
+                          src={item.img}
+                          alt={item.label}
+                        />
+                      </div>
+                    </Link>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          ) : (
+            <p className="text-center">Loading body types...</p>
+          )}
+        </div>
+      </section>
 
       <section>
         <BackImgSection />
       </section>
 
       <SellCar></SellCar>
-
 
       <section
         className="mb-5  home-background-imgs quickSearchByMake"
@@ -536,50 +618,53 @@ const Home = () => {
         }}
       >
         <div className="container-web ">
-        <div className="text-center">
-          <h1 className="text-2xl text-center md:text-5xl font-sans font-semibold mb-16">
-            QUICK SEARCH BY <span className="text-red-500">BODY TYPE</span>
-          </h1>
-        </div>
-
-        {/* Show the slider only if bodyTypesView is populated */}
-        {bodyTypesView.length > 0 ? (
-          <div className="slider-container">
-            <Swiper
-              modules={[Navigation]}
-              spaceBetween={20}
-              slidesPerView={brandsView.length < 6 ? brandsView.length : 6}
-              navigation
-              breakpoints={{
-                1280: { slidesPerView: 6 }, // For extra large screens
-                1024: { slidesPerView: 5 }, // For desktops
-                768: { slidesPerView: 3 }, // For tablets
-                640: { slidesPerView: 2 }, // For small tablets
-                480: { slidesPerView: 1 }, // For mobile phones
-              }}
-            >
-              {bodyTypesView.map((item, index) => (
-                <SwiperSlide key={index}>
-                  <Link
-                    to={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=${index}&model=}`}
-                    className="swipeMakeQuick flex flex-col items-center  "
-                  >
-                    <img
-                      className={`w-full max-w-[193px] h-[72px] object-contain ${
-                        item.img ? "" : "defaultimg"
-                      }`}
-                      src={item.img ? item.img : defaultImage}
-                      alt={item.label}
-                    />
-                    <span className="mt-2 text-center text-[22.15px]">{item.label}</span>
-                  </Link>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+          <div className="text-center">
+            <h1 className="text-2xl text-center md:text-5xl font-sans font-semibold mb-16">
+              QUICK SEARCH BY <span className="text-red-500">BODY TYPE</span>
+            </h1>
           </div>
-        ) : (
-          <p className="text-center">Loading body types...</p>
-        )}
+
+          {/* Show the slider only if bodyTypesView is populated */}
+          {bodyTypesView.length > 0 ? (
+            <div className="slider-container">
+              <Swiper
+                modules={[Navigation]}
+                spaceBetween={20}
+                   autoplay={ true}
+                slidesPerView={brandsView.length < 6 ? brandsView.length : 6}
+                navigation
+                breakpoints={{
+                  1280: { slidesPerView: 6 }, // For extra large screens
+                  1024: { slidesPerView: 5 }, // For desktops
+                  768: { slidesPerView: 3 }, // For tablets
+                  640: { slidesPerView: 2 }, // For small tablets
+                  480: { slidesPerView: 1 }, // For mobile phones
+                }}
+              >
+                {bodyTypesView.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <Link
+                      to={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=${index}&model=}`}
+                      className="swipeMakeQuick flex flex-col items-center  "
+                    >
+                      <img
+                        className={`w-full max-w-[193px] h-[72px] object-contain ${
+                          item.img ? "" : "defaultimg"
+                        }`}
+                        src={item.img ? item.img : defaultImage}
+                        alt={item.label}
+                      />
+                      <span className="mt-2 text-center text-[22.15px]">
+                        {item.label}
+                      </span>
+                    </Link>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          ) : (
+            <p className="text-center">Loading body types...</p>
+          )}
         </div>
       </section>
 
@@ -589,38 +674,37 @@ const Home = () => {
             Recent Happy customers &{" "}
             <span className="text-red-500"> Featured Vehicles</span>
           </h2>
-          <FeaturedCars />
-        <div className="flex items-center justify-between ">
-          <div className="flex items-center gap-3 ">
-            <span className="text-xl font-medium text-black">Follow Us :</span>
-            <div className="flex items-center gap-2">
-              <Link
-                href="#"
-                className="bg-[#D7E3EF] p-2 rounded-full hover:text-gray-900 transition-colors"
-                aria-label="Facebook"
-              >
-                <FaFacebook className="w-5 h-5" />
-              </Link>
-              <Link
-                href="#"
-                className="bg-[#D7E3EF] p-2 rounded-full hover:text-gray-900 transition-colors"
-                aria-label="Instagram"
-              >
-                <FaInstagram className="w-5 h-5" />
-              </Link>
+
+          <AutoPlaySlider />
+          <div className="flex items-center justify-between mt-8">
+            <div className="flex items-center gap-3 ">
+              <span className="text-xl font-medium text-black">
+                Follow Us :
+              </span>
+              <div className="flex items-center gap-2">
+                <Link
+                  href="#"
+                  className="bg-[#D7E3EF] p-2 rounded-full hover:text-gray-900 transition-colors"
+                  aria-label="Facebook"
+                >
+                  <FaFacebook className="w-5 h-5" />
+                </Link>
+                <Link
+                  href="#"
+                  className="bg-[#D7E3EF] p-2 rounded-full hover:text-gray-900 transition-colors"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram className="w-5 h-5" />
+                </Link>
+              </div>
             </div>
+            <button className="bg-red-600 hover:bg-red-700 py-[12px] px-[33px] font-medium rounded-sm text-white text-xs">
+              View 4 Featured Cars
+            </button>
           </div>
-          <button className="bg-red-600 hover:bg-red-700 py-[12px] px-[33px] rounded-sm text-white text-xs">
-            View 4 Featured Cars
-          </button>
-        </div>
         </div>
       </section>
 
- 
-
-          {/* <AutoPlaySlider /> */}
-    
       <section>
         <LastImg />
       </section>

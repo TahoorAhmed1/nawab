@@ -1,6 +1,5 @@
 import { FaFrown } from "react-icons/fa";
 import { FiFrown } from "react-icons/fi";
-import { LuSmilePlus } from "react-icons/lu";
 
 export default function SellCar() {
   return (
@@ -46,32 +45,32 @@ export default function SellCar() {
             </div>
           <div className=" flex flex-col gap-y-[16px] py-[50px] px-[23px]">
             <div className="flex items-start gap-3">
-              <LuSmilePlus className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
+              <img src="../assets/smile.png" color="green" className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
               <span className="text-black">Pay less then marketplace</span>
             </div>
             
             <div className="flex items-start gap-3">
-              <LuSmilePlus className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
+              <img src="../assets/smile.png" color="green" className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
               <span className="text-black">Pre book cars of your choice cars</span>
             </div>
             <div className="flex items-start gap-3">
-              <LuSmilePlus className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
+              <img src="../assets/smile.png" color="green" className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
               <span className="text-black">Rv boats</span>
             </div>
             <div className="flex items-start gap-3">
-              <LuSmilePlus className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
+              <img src="../assets/smile.png" color="green" className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
               <span className="text-black">Hundreds of cars to pick from</span>
             </div>
             <div className="flex items-start gap-3">
-              <LuSmilePlus className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
+              <img src="../assets/smile.png" color="green" className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
               <span className="text-black">Certified inspection report</span>
             </div>
             <div className="flex items-start gap-3">
-              <LuSmilePlus className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
+              <img src="../assets/smile.png" color="green" className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
               <span className="text-black">No former rental cars or texis</span>
             </div>
             <div className="flex items-start gap-3">
-              <LuSmilePlus className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
+              <img src="../assets/smile.png" color="green" className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
               <span className="text-black">No haggling</span>
             </div>
           </div>
@@ -147,27 +146,27 @@ export default function SellCar() {
             
             
             <div className="flex items-start gap-3">
-              <LuSmilePlus className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
+              <img src="../assets/smile.png" color="green" className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
               <span className="text-black">We pay instantly</span>
             </div>
             <div className="flex items-start gap-3">
-              <LuSmilePlus className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
+              <img src="../assets/smile.png" color="green" className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
               <span className="text-black">We don’t haggle</span>
             </div>
             <div className="flex items-start gap-3">
-              <LuSmilePlus className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
+              <img src="../assets/smile.png" color="green" className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
               <span className="text-black">Our offers are firm</span>
             </div>
             <div className="flex items-start gap-3">
-              <LuSmilePlus className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
+              <img src="../assets/smile.png" color="green" className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
               <span className="text-black">We’ll buy your car today</span>
             </div>
             <div className="flex items-start gap-3">
-              <LuSmilePlus className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
+              <img src="../assets/smile.png" color="green" className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
               <span className="text-black">No need to clean your car</span>
             </div>
             <div className="flex items-start gap-3">
-              <LuSmilePlus className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
+              <img src="../assets/smile.png" color="green" className="w-8 h-8 flex-shrink-0 text-[#0D9E11]" />
               <span className="text-black">We can pick up your car</span>
             </div>
           </div>
