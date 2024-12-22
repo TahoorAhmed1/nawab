@@ -582,7 +582,7 @@ const Home = () => {
                   <SwiperSlide key={index} className="swipeMakeQuick">x
                     <Link
                       // href={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=&model=${index}`}
-                      href=""
+                      her
                       className="block px-2"
                     >
                       <div className="relative h-[110px] flex items-center justify-center transition-transform duration-300 hover:scale-105">
@@ -618,16 +618,16 @@ const Home = () => {
           maxWidth: "100%",
         }}
       >
-        <div className="container-web ">
           <div className="text-center">
             <h1 className="text-2xl text-center md:text-5xl font-sans font-semibold mb-16">
               QUICK SEARCH BY <span className="text-red-500">BODY TYPE</span>
             </h1>
           </div>
+        <div className="container-web ">
 
           {/* Show the slider only if bodyTypesView is populated */}
           {bodyTypesView.length > 0 ? (
-            <div className="slider-container">
+            // <div className="slider-container">
               <Swiper
                 modules={[Navigation]}
                 spaceBetween={20}
@@ -642,12 +642,16 @@ const Home = () => {
                   480: { slidesPerView: 1 }, // For mobile phones
                 }}
               >
+               <div className="flex gap-x-28 mt-5">
+
+
+
                 {bodyTypesView.map((item, index) => (
-                  <SwiperSlide key={index}>
+                  <div key={index}>
                     <Link
                       // to={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=${index}&model=}`}
                       to={"#"}
-                      className="swipeMakeQuick flex flex-col items-center  "
+                      className="w-full flex flex-col items-center  "
                     >
                       <img
                         className={`w-full max-w-[193px] h-[72px] object-contain ${
@@ -660,10 +664,11 @@ const Home = () => {
                         {item.label}
                       </span>
                     </Link>
-                  </SwiperSlide>
+                  </div>
                 ))}
+              </ div>
               </Swiper>
-            </div>
+
           ) : (
             <p className="text-center">Loading body types...</p>
           )}
