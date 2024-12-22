@@ -554,7 +554,7 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="quickSearchByMake py-20 mt-8">
+      <section className="quickSearchByMake py-10 ">
         <div className="text-center mb-[55px]">
           <h1 className="text-3xl md:text-[2.2rem] font-semibold font-sans">
             QUICK SEARCH BY<span className="text-[#F40000]"> MAKE</span>
