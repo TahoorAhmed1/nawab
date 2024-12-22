@@ -583,9 +583,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="px-4 py-8   bg-[#EFF3FA] ">
+      <section className=" py-20  bg-[#EFF3FA] ">
         <div className="container-web">
-          <h2 className="text-5xl font-normal text-center mb-[75px]">
+          <h2 className="text-5xl uppercase font-normal text-center mb-[75px]">
             Recent Happy customers &{" "}
             <span className="text-red-500"> Featured Vehicles</span>
           </h2>
