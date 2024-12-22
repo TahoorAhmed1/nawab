@@ -70,7 +70,7 @@ const Navbar = () => {
             <img
               className="main-logo-img"
               width={180}
-              height={98}
+              height={95}
               src="../assets/soni_auto_1 1.png"
               alt="Logo"
             />
@@ -79,12 +79,12 @@ const Navbar = () => {
 
         {/* Desktop View */}
         {!isMobile && (
-          <div className="p-2">
-            <div className="p-3 flex justify-end items-center gap-5">
+          <div >
+            <div className="p-1 flex justify-end items-center gap-5">
               {/* Search Input with Icons */}
-              <div className="relative flex items-center  text-black rounded-sm">
-                <span className="absolute left-3 top-1.5">
-                  <img src={pin} /> 
+              <div className="relative flex items-center  text-black rounded-[3px]">
+                <span className="absolute left-2 top-1">
+                  <img src={pin}  className="w-[16px]"/> 
                 </span>
 
                 <select
@@ -139,7 +139,7 @@ const Navbar = () => {
               {/* Left Section for Home */}
               <div className="flex-shrink-0 text-center mr-8">
                 <Link
-                  className=" font-wala-nav hoverr  navbar-wala-bg home-pr-color"
+                  className=" font-normal font-sans  text-[16px] hoverr  navbar-wala-bg home-pr-color"
                   to="/"
                 >
                   HOME
@@ -186,7 +186,7 @@ const Navbar = () => {
               </div>
               <div className="flex-shrink-0 text-center mr-8">
                 <Link
-                  className=" font-wala-nav hoverr  navbar-wala-bg home-pr-color"
+                  className=" font-normal font-sans text-[16px] hoverr  navbar-wala-bg home-pr-color"
                   to="/"
                 >
                   TEXT NOW

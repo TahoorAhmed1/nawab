@@ -7,9 +7,9 @@ export default function SellCar() {
     <div className="container-web  py-24 flex flex-col gap-y-[100px]">
     <div className="w-full ">
 
-      <h1 className="text-center text-3xl md:text-5xl font-bold mb-[16px]">
+      <h1 className="text-center font-sans text-3xl md:text-5xl font-semibold mb-[16px]">
       BUY WITH 
-              <span className="text-red-600">CONFIDENCE</span> ?
+              <span className="text-red-600 ml-2">CONFIDENCE</span> 
       </h1>
       <p className="text-[18px] font-normal text-center mb-[51px]">Every car we sell has undergone rigorous inspection to insure top-tier and reliability</p>
 
@@ -103,7 +103,7 @@ export default function SellCar() {
       </div>
     </div>
     <div className="w-full ">
-      <h1 className="text-center text-3xl md:text-5xl font-bold mb-[70px]">
+      <h1 className="text-center font-semibold text-3xl md:text-5xl font-sans mb-[70px]">
         WHY SELL YOUR CAR ONLINE TO{' '}
         <span className="text-red-600">SONI AUTO MARKET</span> ?
       </h1>

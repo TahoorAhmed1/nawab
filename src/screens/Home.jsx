@@ -321,9 +321,9 @@ const Home = () => {
         <div className="flex flex-col items-center justify-center min-h-screen ">
           <div
             style={{ width: "100%", marginTop: "130px" }}
-            className="bg-black bg-opacity-50 text-white text-center p-8 w-full rounded-lg"
+            className="bg-black bg-opacity-50 text-white text-center py-8 px-16 w-full rounded-lg"
           >
-            <h1 className="text-2xl text-center md:text-5xl font-normal mb-6">
+            <h1 className="text-2xl  font-sans text-center md:text-5xl font-normal mb-6">
               WELCOME TO{" "}
               <span style={{ color: "#F40000" }}>SONI AUTO MARKET</span>
             </h1>
@@ -385,7 +385,7 @@ const Home = () => {
               )}
 
               {/* Dropdowns and Search Button Row */}
-              <div className="drop-down-menu w-full">
+              <div className="flex justify-center items-center gap-x-[20px] w-[92%] ">
                 {/* Make Dropdown */}
                 <div className="relative w-[100%] mt-6">
                   <select
@@ -457,12 +457,12 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="mt-6 text-center">
+            <div className="mt-6 text-center ">
           <Link 
             href="/car-details-search/brand=&min_price=&max_price=10000&min_year=&max_year=&color=&engine=&fuel_type=&body_style=1&model="
-            className="inline-block px-10 mr-10 py-2.5 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
+            className="inline-block px-16   text-center mr-12 py-2.5 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
           >
-            Cars above $10000
+          <p>Cars above $10000</p>  
           </Link>
         </div>
           </div>
@@ -472,7 +472,7 @@ const Home = () => {
 
       <section className="quickSearchByMake py-20 mt-8">
       <div className="text-center mb-[55px]">
-        <h1 className="text-3xl md:text-5xl font-medium">
+        <h1 className="text-3xl md:text-5xl font-semibold font-sans">
           QUICK SEARCH BY<span className="text-[#F40000]"> MAKE</span>
         </h1>
       </div>
@@ -537,7 +537,7 @@ const Home = () => {
       >
         <div className="container-web ">
         <div className="text-center">
-          <h1 className="text-2xl text-center md:text-3xl font-bold mb-16">
+          <h1 className="text-2xl text-center md:text-5xl font-sans font-semibold mb-16">
             QUICK SEARCH BY <span className="text-red-500">BODY TYPE</span>
           </h1>
         </div>
@@ -562,10 +562,10 @@ const Home = () => {
                 <SwiperSlide key={index}>
                   <Link
                     to={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=${index}&model=}`}
-                    className="swipeMakeQuick flex flex-col items-center  mb-4"
+                    className="swipeMakeQuick flex flex-col items-center  "
                   >
                     <img
-                      className={`w-full max-w-[193px] h-[50px] object-contain ${
+                      className={`w-full max-w-[193px] h-[72px] object-contain ${
                         item.img ? "" : "defaultimg"
                       }`}
                       src={item.img ? item.img : defaultImage}
@@ -585,7 +585,7 @@ const Home = () => {
 
       <section className=" py-20  bg-[#EFF3FA] ">
         <div className="container-web">
-          <h2 className="text-5xl uppercase font-normal text-center mb-[75px]">
+          <h2 className="text-5xl uppercase font-semibold font-sans text-center mb-[75px]">
             Recent Happy customers &{" "}
             <span className="text-red-500"> Featured Vehicles</span>
           </h2>

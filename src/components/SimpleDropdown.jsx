@@ -14,7 +14,7 @@ const SimpleDropdown = ({ title, options, links, style }) => {
     >
       <div>
         <button
-          className="font-wala-nav inline-flex justify-between items-center w-full shadow-sm px-4 h-10 text-md font-medium text-white hoverr nav-1100"
+          className=" inline-flex justify-between items-center w-full shadow-sm px-4 h-10   text-white font-normal text-[16px] hoverr nav-1100"
           aria-haspopup="true"
           aria-expanded={isOpen ? "true" : "false"}
           onClick={toggleDropdown}
