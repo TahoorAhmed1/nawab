@@ -323,7 +323,7 @@ const Home = () => {
             style={{ width: "100%", marginTop: "130px" }}
             className="bg-black bg-opacity-50 text-white text-center py-8 px-16 w-full rounded-lg"
           >
-            <h1 className="text-2xl  font-sans text-center md:text-5xl font-normal mb-6">
+            <h1 className="text-2xl  font-sans text-center md:text-5xl font-semibold mb-6">
               WELCOME TO{" "}
               <span style={{ color: "#F40000" }}>SONI AUTO MARKET</span>
             </h1>

@@ -83,21 +83,39 @@ const Navbar = () => {
             <div className="p-1 flex justify-end items-center gap-5 pr-[10px]">
               {/* Search Input with Icons */}
               <div className="relative flex items-center  text-black rounded-[3px]">
-                <span className="absolute left-2 top-0.5">
+                <span className="absolute left-2 top-1">
                   <img src={pin}  className="w-[16px]"/> 
                 </span>
 
                 <select
-                  className="w-full text-[14px] p-0.5 border rounded-sm appearance-none pl-8  text-black placeholder:text-black  "
+                  className="w-full text-[14px] p-1 border rounded-sm appearance-none pl-8  text-black placeholder:text-black  "
                   value={selectedLocation}
                   onChange={(e) => setSelectedLocation(e.target.value)}
                 >
-                  <option value="" >Select store location</option>
-                  <option value="Toronto, Ontario" clas>Toronto, Ontario</option>
+                  <option value=""  defaultValue={""}>Select store location</option>
+                  <option value="Toronto, Ontario" >Toronto, Ontario</option>
                   <option value="East moosejaw Saskatchewan">
                     East moosejaw Saskatchewan
                   </option>
                 </select> 
+
+                <span className="text-red-600">
+
+                <svg
+            className=" absolute right-2 top-1 z-10 w-8 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              fillRule="evenodd"
+              d="M5.23 7.21a.75.75 0 011.06 0L10 10.5l3.71-3.29a.75.75 0 111.04 1.08l-4.25 3.75a.75.75 0 01-1.04 0l-4.25-3.75a.75.75 0 010-1.08z"
+              clipRule="evenodd"
+            />
+          </svg>
+                </span>
+
 
                
             
