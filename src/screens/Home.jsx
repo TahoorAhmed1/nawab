@@ -612,7 +612,7 @@ const Home = () => {
       <SellCar></SellCar>
 
       <section
-        className="mb-5  home-background-imgs quickSearchByMake"
+        className="  home-background-imgs quickSearchByMake"
         style={{
           backgroundImage: "url(../assets/car-bg.png)",
           maxWidth: "100%",
@@ -675,7 +675,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className=" py-20  bg-[#EFF3FA] ">
+      <section className=" py-40  bg-[#EFF3FA] ">
         <div className="container-web">
           <h2 className="text-[2.2rem] uppercase font-semibold font-sans text-center mb-[75px]">
             Recent Happy customers &{" "}
