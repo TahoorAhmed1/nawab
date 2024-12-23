@@ -10,6 +10,10 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { FaArrowRight, FaFacebook, FaInstagram } from "react-icons/fa";
 
+import banner1 from './../assets/back.png'
+import banner2 from './../assets/banner2.png'
+import banner3 from './../assets/banner1.png'
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -252,11 +256,20 @@ const Home = () => {
     ],
   };
 
+  var bannerSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+  };
+
   return (
     <>
       <div className="home-sec " style={{ position: "relative" }}>
         {/* Background Image or Video */}
-        {banner && banner.mime_type === "image/png" ? (
+        {/* {banner && banner.mime_type === "image/png" ? (
           <div
             style={{
               backgroundImage: `url(${banner.original_url})`,
@@ -316,8 +329,21 @@ const Home = () => {
               zIndex: -1,
             }}
           ></div>
-        )}
-        <div className="container-web">
+        )} */}
+        <div className="bannerSlider w-full min-h-screen">
+          <Slider {...bannerSettings} className='w-full min-h-screen [&>.slick-list]:w-full [&>.slick-list]:min-h-screen'>
+            <div className="bannerSlide w-full min-h-screen">
+              <img src={banner1} className="min-h-screen object-cover"/>
+            </div>
+            <div className="bannerSlide w-full min-h-screen">
+              <img src={banner2} className="min-h-screen object-cover"/>
+            </div>
+            <div className="bannerSlide w-full min-h-screen">
+              <img src={banner3} className="min-h-screen object-cover"/>
+            </div>
+          </Slider>
+        </div>
+        <div className="container-web absolute top-0 w-full">
           <div className="flex flex-col items-center justify-center min-h-screen ">
             <div
               style={{ width: "100%", marginTop: "130px" }}
@@ -567,7 +593,7 @@ const Home = () => {
               <Swiper
                 modules={[Navigation]}
                 spaceBetween={20}
-                
+
                 slidesPerView={brandsView.length < 6 ? brandsView.length : 6}
                 breakpoints={{
                   1280: { slidesPerView: 6 }, // XL screens
@@ -585,11 +611,10 @@ const Home = () => {
                       href=""
                       className="block px-2"
                     >
-                      <div className="relative h-[110px] flex items-center justify-center transition-transform duration-300 hover:scale-105">
+                      <div className="relative h-[110px]  flex items-center justify-center transition-transform duration-300 hover:scale-105">
                         <img
-                          className={`h-auto max-h-[110px] w-full max-w-[150px] object-contain ${
-                            item.img ? "" : "defaultimg"
-                          }`}
+                          className={`h-auto max-h-[110px] w-full max-w-[150px] object-contain ${item.img ? "" : "defaultimg"
+                            }`}
                           src={item.img}
                           alt={item.label}
                         />
@@ -618,31 +643,31 @@ const Home = () => {
           maxWidth: "100%",
         }}
       >
-          <div className="text-center">
-            <h1 className="text-2xl text-center md:text-[2.2rem] font-sans font-semibold mb-16">
-              QUICK SEARCH BY <span className="text-red-500">BODY TYPE</span>
-            </h1>
-          </div>
+        <div className="text-center">
+          <h1 className="text-2xl text-center md:text-[2.2rem] font-sans font-semibold mb-16">
+            QUICK SEARCH BY <span className="text-red-500">BODY TYPE</span>
+          </h1>
+        </div>
         <div className="container-web ">
 
           {/* Show the slider only if bodyTypesView is populated */}
           {bodyTypesView.length > 0 ? (
             // <div className="slider-container">
-              <Swiper
-                modules={[Navigation]}
-                spaceBetween={20}
-                   autoplay={ true}
-                slidesPerView={brandsView.length < 6 ? brandsView.length : 6}
-                navigation
-                breakpoints={{
-                  1280: { slidesPerView: 6 }, // For extra large screens
-                  1024: { slidesPerView: 5 }, // For desktops
-                  768: { slidesPerView: 3 }, // For tablets
-                  640: { slidesPerView: 2 }, // For small tablets
-                  480: { slidesPerView: 1 }, // For mobile phones
-                }}
-              >
-               <div className="flex gap-x-28 mt-5">
+            <Swiper
+              modules={[Navigation]}
+              spaceBetween={20}
+              autoplay={true}
+              slidesPerView={brandsView.length < 6 ? brandsView.length : 6}
+              navigation
+              breakpoints={{
+                1280: { slidesPerView: 6 }, // For extra large screens
+                1024: { slidesPerView: 5 }, // For desktops
+                768: { slidesPerView: 3 }, // For tablets
+                640: { slidesPerView: 2 }, // For small tablets
+                480: { slidesPerView: 1 }, // For mobile phones
+              }}
+            >
+              <div className="flex gap-x-28 mt-5">
 
 
 
@@ -654,9 +679,8 @@ const Home = () => {
                       className="w-full flex flex-col items-center  "
                     >
                       <img
-                        className={`w-full max-w-[193px] h-[72px] object-contain ${
-                          item.img ? "" : "defaultimg"
-                        }`}
+                        className={`w-full max-w-[193px] hover:scale-150 transition duration-200 h-[72px] object-contain ${item.img ? "" : "defaultimg"
+                          }`}
                         src={item.img ? item.img : defaultImage}
                         alt={item.label}
                       />
@@ -667,7 +691,7 @@ const Home = () => {
                   </div>
                 ))}
               </ div>
-              </Swiper>
+            </Swiper>
 
           ) : (
             <p className="text-center">Loading body types...</p>
@@ -675,6 +699,11 @@ const Home = () => {
         </div>
       </section>
 
+ 
+
+      <section>
+        <LastImg />
+      </section>
       <section className=" py-40  bg-[#EFF3FA] ">
         <div className="container-web">
           <h2 className="text-[2.2rem] uppercase font-semibold font-sans text-center mb-[75px]">
@@ -711,11 +740,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <section>
-        <LastImg />
-      </section>
-
       <section>
         <Footer />
       </section>

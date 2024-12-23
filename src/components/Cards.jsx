@@ -7,13 +7,13 @@ const InstagramCard = ({
   transmission,
 }) => {
   return (
-    <div className="relative overflow-hidden group  rounded-xl">
+    <div className="relative overflow-hidden group  rounded-xl min-h-[400px]">
       <div className=" w-full relative">
         <img
           src={imgSrc}
           alt={`${year} ${make}`}
           fill
-          className="object-cover w-full h-[269px]"
+          className="object-cover w-full h-full"
         />
       </div>
       {/* <div className="bg-[#222732] text-white py-[30px] px-[35px]">
