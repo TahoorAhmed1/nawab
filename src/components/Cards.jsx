@@ -7,7 +7,7 @@ const InstagramCard = ({
   transmission,
 }) => {
   return (
-    <div className="relative overflow-hidden group  rounded-xl">
+    <div className="relative overflow-hidden group  rounded-xl min-h-[427px]">
       <div className=" w-full relative">
         <img
           src={imgSrc}
@@ -16,7 +16,7 @@ const InstagramCard = ({
           className="object-cover w-full h-[269px]"
         />
       </div>
-      <div className="bg-[#222732] text-white py-[30px] px-[35px]">
+      <div className="bg-[#222732] text-white py-[30px] px-[35px] min-h-[158px]">
         <div className="flex  font-normal items-center justify-between">
           <h3 className="text-base truncate">
             {year} {make}...

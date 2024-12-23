@@ -12,7 +12,7 @@ const LastImg = () => {
        
         zIndex: -1,
       }}
-       className=" bg-cover bg-center h-auto  text-white  lg:py-28">
+       className=" bg-cover bg-center h-auto max-sm:px-5  text-white  lg:py-28">
     <div className="container-web   flex flex-col lg:flex-row justify-between items-center gap-20 ">
         
         
