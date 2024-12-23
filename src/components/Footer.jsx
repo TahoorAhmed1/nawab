@@ -183,32 +183,22 @@ export  default function Footer() {
                  r
                   Contacts</h4>
               <p className="text-red-500 mb-1">Call us <span className="text-white">+1 93843-34934-32</span> </p>
-              <p className="text-sm">456 New Place, Moose Jaw, SK S6H 2B2, Canada</p>
 
     </div>
-<div className="grid grid-cols-2 gap-3">
-  
+    <div>
+              <h4 className="text-xl font-bold mb-2"> <span className="border-b-2 border-[#F40000]">
 
-            <div>
-              <h4 className="text-xl font-bold mb-1">Browse by Location:</h4>
-              <div className="grid grid-cols-1 gap-1 text-sm">
-                <Link href="#" className="hover:text-primary">Used Cars in Toronto, ON</Link>
-                <Link href="#" className="hover:text-primary">Used Cars in Brampton, ON</Link>
-                <Link href="#" className="hover:text-primary">Used Cars in Mississauga, ON</Link>
-                <Link href="#" className="hover:text-primary">Used Cars in Markham, ON</Link>
-              </div>
-            </div>
+                 Ou
+                </span>
+                 r
+                 Location
+                 </h4>
+              <p className="text-sm">456 New Place, Moose Jaw, SK S6H 2B2, Canada
+                <br/>
+                Other location: 80 Manitoba street east moosejaw Saskatchewan
+              </p>
 
-            <div>
-              <h4 className="text-xl font-bold mb-1">Sell My Car:</h4>
-              <div className="grid grid-cols-1 gap-1 text-sm">
-                <Link href="#" className="hover:text-primary">Sell My Car in Toronto</Link>
-                <Link href="#" className="hover:text-primary">Sell My Car in Mississauga</Link>
-                <Link href="#" className="hover:text-primary">Sell My Car in Guelph</Link>
-                <Link href="#" className="hover:text-primary">Sell My Car in Brampton</Link>
-              </div>
-            </div>
-          </div>
+    </div>
           </div>
         </div>
       </div>
