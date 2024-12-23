@@ -611,7 +611,7 @@ const Home = () => {
                       href=""
                       className="block px-2"
                     >
-                      <div className="relative h-[110px]  flex items-center justify-center transition-transform duration-300 hover:scale-105">
+                      <div className="relative h-[110px]  flex items-center justify-center transition-transform duration-300 hover:scale-110">
                         <img
                           className={`h-auto max-h-[110px] w-full max-w-[150px] object-contain ${item.img ? "" : "defaultimg"
                             }`}
@@ -667,7 +667,7 @@ const Home = () => {
                 480: { slidesPerView: 1 }, // For mobile phones
               }}
             >
-              <div className="flex gap-x-28 mt-5">
+              <div className="flex gap-x-28 mt-5 px-5">
 
 
 
@@ -679,7 +679,7 @@ const Home = () => {
                       className="w-full flex flex-col items-center  "
                     >
                       <img
-                        className={`w-full max-w-[193px] hover:scale-150 transition duration-200 h-[72px] object-contain ${item.img ? "" : "defaultimg"
+                        className={`w-full max-w-[193px] hover:scale-110 transition duration-200 h-[72px] object-contain ${item.img ? "" : "defaultimg"
                           }`}
                         src={item.img ? item.img : defaultImage}
                         alt={item.label}
@@ -704,7 +704,7 @@ const Home = () => {
       <section>
         <LastImg />
       </section>
-      <section className=" py-40  bg-[#EFF3FA] ">
+      <section className=" py-[100px]  bg-[#EFF3FA] ">
         <div className="container-web">
           <h2 className="text-[2.2rem] uppercase font-semibold font-sans text-center mb-[75px]">
             Recent Happy customers &{" "}
