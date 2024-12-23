@@ -13,7 +13,7 @@ const vehicles = [
     price: 690000,
     mileage: 104,
     transmission: "transmission",
-    image: "../assets/post2.jpg.png",
+    image: "../assets/car1.png",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const vehicles = [
     price: 549999,
     mileage: 3655,
     transmission: "transmission",
-    image: "../assets/post3.jpg.png",
+    image: "../assets/car2.png",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const vehicles = [
     price: 479999,
     mileage: 4431,
     transmission: "transmission",
-    image: "../assets/post4.jpg.png",
+    image: "../assets/car3.png",
   },
   {
     id: 4,
@@ -43,7 +43,17 @@ const vehicles = [
     price: 349698,
     mileage: 16850,
     transmission: "transmission",
-    image: "../assets/post5.jpg.png",
+    image: "../assets/car4.png",
+  },
+  {
+    id: 4,
+    year: 2020,
+    make: "Rolls-Royce",
+    model: "Cullinan",
+    price: 349698,
+    mileage: 16850,
+    transmission: "transmission",
+    image: "../assets/car5.png",
   },
 ];
 

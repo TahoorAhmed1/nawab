@@ -16,7 +16,7 @@ const InstagramCard = ({
           className="object-cover w-full h-[269px]"
         />
       </div>
-      <div className="bg-[#222732] text-white py-[30px] px-[35px]">
+      {/* <div className="bg-[#222732] text-white py-[30px] px-[35px]">
         <div className="flex  font-normal items-center justify-between">
           <h3 className="text-base truncate">
             {year} {make}...
@@ -31,7 +31,7 @@ const InstagramCard = ({
           <span>{mileage} KM</span>
           <span>{transmission}</span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
