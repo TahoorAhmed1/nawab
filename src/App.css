@@ -475,3 +475,26 @@
     position: relative;
     z-index: 1;
 }
+
+.bannerSlider .slick-dots{
+    bottom:25px;
+}
+.slick-dots li button:before{
+    font-size: 13px !important;
+    color: #D9D9D9 !important;
+    opacity: 1 !important;
+
+}
+.bannerSlider .slick-dots li.slick-active button:before{
+    color: #F40000 !important;
+}
+.slick-dots li{
+    width: 13px !important;
+    height: 13px !important;
+    padding: 0px;
+}
+.slick-dots li button{
+    width: 13px !important;
+    height: 13px !important;
+    padding: 0px;
+}
