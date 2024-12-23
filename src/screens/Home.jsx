@@ -684,7 +684,7 @@ const Home = () => {
                         src={item.img ? item.img : defaultImage}
                         alt={item.label}
                       />
-                      <span className="mt-2 text-center text-[22.15px]">
+                      <span className="mt-2 text-center text-[18px]">
                         {item.label}
                       </span>
                     </Link>
