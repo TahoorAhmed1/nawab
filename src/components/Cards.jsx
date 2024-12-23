@@ -7,16 +7,16 @@ const InstagramCard = ({
   transmission,
 }) => {
   return (
-    <div className="relative overflow-hidden group  rounded-xl min-h-[427px]">
+    <div className="relative overflow-hidden group  rounded-xl min-h-[400px]">
       <div className=" w-full relative">
         <img
           src={imgSrc}
           alt={`${year} ${make}`}
           fill
-          className="object-cover w-full h-[269px]"
+          className="object-cover w-full h-full"
         />
       </div>
-      <div className="bg-[#222732] text-white py-[30px] px-[35px] min-h-[158px]">
+      {/* <div className="bg-[#222732] text-white py-[30px] px-[35px]">
         <div className="flex  font-normal items-center justify-between">
           <h3 className="text-base truncate">
             {year} {make}...
@@ -31,7 +31,7 @@ const InstagramCard = ({
           <span>{mileage} KM</span>
           <span>{transmission}</span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
