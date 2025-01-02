@@ -157,7 +157,7 @@ const Navbar = () => {
               <div className="flex-shrink-0 text-center mr-8">
                 <Link
                   className=" font-normal font-sans  text-[14px] hoverr  text-white"
-                  to="#"
+                  to="/"
                 >
                   HOME
                 </Link>

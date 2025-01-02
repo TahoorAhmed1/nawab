@@ -607,8 +607,7 @@ const Home = () => {
                 {brandsView.map((item, index) => (
                   <SwiperSlide key={index} className="swipeMakeQuick">
                     <Link
-                      // href={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=&model=${index}`}
-                      href=""
+                      href={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=&model=${index}`}
                       className="block px-2"
                     >
                       <div className="relative h-[110px]  flex items-center justify-center transition-transform duration-300 hover:scale-110">
@@ -674,8 +673,7 @@ const Home = () => {
                 {bodyTypesView.map((item, index) => (
                   <div key={index}>
                     <Link
-                      // to={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=${index}&model=}`}
-                      to={"#"}
+                      to={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=${index}&model=}`}
                       className="w-full flex flex-col items-center  "
                     >
                       <img
@@ -684,7 +682,7 @@ const Home = () => {
                         src={item.img ? item.img : defaultImage}
                         alt={item.label}
                       />
-                      <span className="mt-2 text-center text-[18px]">
+                      <span className="mt-2 text-center lg:text-[17px] text-[15px]">
                         {item.label}
                       </span>
                     </Link>

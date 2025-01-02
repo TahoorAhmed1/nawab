@@ -12,7 +12,7 @@ export default function SellCar() {
       </h1>
       <p className="text-[18px] font-normal text-center mb-[51px]">Every car we sell has undergone rigorous inspection to insure top-tier and reliability</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-10 gap-6">
         {/* Dealer Ship */}
         <div className=" shadow-md  h-[396.88px]  rounded-sm">
           <p className="text-3xl py-6 bg-[#E5E3DF] font-semibold text-[#666666] text-center ">Dealer Ship</p>
@@ -107,7 +107,7 @@ export default function SellCar() {
         <span className="text-red-600">SONI AUTO MARKET</span> ?
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-10 gap-6">
         {/* Dealer Ship */}
         <div className=" shadow-md  h-[396.88px]  rounded-sm">
           <p className="text-3xl py-6 bg-[#E5E3DF] font-semibold text-[#666666] text-center ">Dealer Ship</p>

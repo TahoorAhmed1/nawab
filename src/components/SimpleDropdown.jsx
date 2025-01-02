@@ -45,8 +45,7 @@ const SimpleDropdown = ({ title, options, links, style }) => {
           <div className="py-1" role="menu" aria-orientation="vertical">
             {options.map((option, index) => (
               <Link
-                key={index}
-                to={"#"}
+              to={links[index]}
                 onClick={closeDropdown}
                 className="block px-4 py-2 text-lg text-white w-full text-left hover:bg-gray-700"
                 role="menuitem"
