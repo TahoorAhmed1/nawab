@@ -677,7 +677,7 @@ const Home = () => {
                       className="w-full flex flex-col items-center  "
                     >
                       <img
-                        className={`w-full max-w-[193px] hover:scale-110 transition duration-200 h-[72px] object-contain ${item.img ? "" : "defaultimg"
+                        className={`w-full max-w-[170px] hover:scale-110 transition duration-200 h-[72px] object-contain ${item.img ? "" : "defaultimg"
                           }`}
                         src={item.img ? item.img : defaultImage}
                         alt={item.label}
