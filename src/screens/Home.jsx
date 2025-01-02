@@ -654,7 +654,7 @@ const Home = () => {
             <div className="slider-container">
   <Swiper
     modules={[Navigation, Scrollbar]}
-    spaceBetween={20}
+    spaceBetween={10}
     autoplay={true}
     slidesPerView={brandsView.length < 6 ? brandsView.length : 6}
     navigation
