@@ -666,7 +666,7 @@ const Home = () => {
                 480: { slidesPerView: 1 }, // For mobile phones
               }}
             >
-              <div className="flex gap-x-28 mt-5 px-5">
+              <div className="flex flex-wrap gap-28 mt-5 px-5">
 
 
 
