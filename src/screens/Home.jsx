@@ -21,7 +21,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar } from "swiper/modules";
 import FeaturedCars from "../components/FeaturedCars";
 import SellCar from "../components/home/buycar";
 
@@ -651,45 +651,42 @@ const Home = () => {
 
           {/* Show the slider only if bodyTypesView is populated */}
           {bodyTypesView.length > 0 ? (
-            // <div className="slider-container">
-            <Swiper
-              modules={[Navigation]}
-              spaceBetween={20}
-              autoplay={true}
-              slidesPerView={brandsView.length < 6 ? brandsView.length : 6}
-              navigation
-              breakpoints={{
-                1280: { slidesPerView: 6 }, // For extra large screens
-                1024: { slidesPerView: 5 }, // For desktops
-                768: { slidesPerView: 3 }, // For tablets
-                640: { slidesPerView: 2 }, // For small tablets
-                480: { slidesPerView: 1 }, // For mobile phones
-              }}
-            >
-              <div className="flex flex-wrap gap-28 mt-5 px-5">
+            <div className="slider-container">
+  <Swiper
+    modules={[Navigation, Scrollbar]}
+    spaceBetween={20}
+    autoplay={true}
+    slidesPerView={brandsView.length < 6 ? brandsView.length : 6}
+    navigation
+    scrollbar={{ draggable: true }} // Enable a draggable scrollbar
+    breakpoints={{
+      1280: { slidesPerView: 6 }, // For extra large screens
+      1024: { slidesPerView: 5 }, // For desktops
+      480: { slidesPerView: 3 }, // For tablets
 
-
-
-                {bodyTypesView.map((item, index) => (
-                  <div key={index}>
-                    <Link
-                      to={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=${index}&model=}`}
-                      className="w-full flex flex-col items-center  "
-                    >
-                      <img
-                        className={`w-full max-w-[170px] hover:scale-110 transition duration-200 h-[72px] object-contain ${item.img ? "" : "defaultimg"
-                          }`}
-                        src={item.img ? item.img : defaultImage}
-                        alt={item.label}
-                      />
-                      <span className="mt-2 text-center lg:text-[17px] text-[15px]">
-                        {item.label}
-                      </span>
-                    </Link>
-                  </div>
-                ))}
-              </ div>
-            </Swiper>
+    }}
+  >
+    {bodyTypesView.map((item, index) => (
+      <SwiperSlide key={index}>
+        <Link
+          to={`car-details-search/brand=&min_year=&max_year=&color=1&engine=&fuel_type=&body_style=${index}&model=}`}
+          className="w-full flex flex-col items-center"
+        >
+          <img
+            className={`w-full max-w-[170px] hover:scale-110 transition duration-200 h-[72px] object-contain ${
+              item.img ? "" : "defaultimg"
+            }`}
+            src={item.img ? item.img : defaultImage}
+            alt={item.label}
+          />
+          <span className="mt-2 text-center lg:text-[17px] text-[15px]">
+            {item.label}
+          </span>
+        </Link>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
 
           ) : (
             <p className="text-center">Loading body types...</p>
