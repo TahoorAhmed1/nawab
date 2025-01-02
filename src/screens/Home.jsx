@@ -658,11 +658,12 @@ const Home = () => {
     autoplay={true}
     slidesPerView={brandsView.length < 6 ? brandsView.length : 6}
     navigation
+  
     scrollbar={{ draggable: true }} // Enable a draggable scrollbar
     breakpoints={{
-      1280: { slidesPerView: 6 }, // For extra large screens
-      1024: { slidesPerView: 5 }, // For desktops
-      480: { slidesPerView: 3 }, // For tablets
+      1280: { slidesPerView: 6 },
+      1024: { slidesPerView: 5 }, 
+      480: { slidesPerView: 4 },
 
     }}
   >
